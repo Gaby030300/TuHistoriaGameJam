@@ -50,6 +50,8 @@
       "name": "OpenUPM",
       "url": "https://package.openupm.com",
       "scopes": [
+        "com.littlebigfun.addressable-importer",
+        "com.openupm",
         "dev.yarnspinner"
       ]
     }
