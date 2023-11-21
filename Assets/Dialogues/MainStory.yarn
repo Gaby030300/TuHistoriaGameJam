@@ -1,0 +1,18 @@
+﻿title: Start
+tags:
+---
+Puni: Hemlo!
+Puni: Got many options
+Puni: Wanna see them?
+    ->Ja!
+        -> This one
+            Other: Nice option
+            Puni: I know!!
+            Puni: It wasn't easy to set, I hate Unity now
+        -> Another one
+            Other: Gut!
+            Puni: Ich lese ein Buch! and stuff
+    ->Nein!
+        Puni: Your loss... sucker
+        Other: Your mom
+===
