@@ -8,8 +8,9 @@ using Yarn.Unity;
 
 public class CharacterInteraction : MonoBehaviour
 {
-    private DialogueRunner dialogueRunner;
-
+    [SerializeField] private DialogueRunner dialogueRunner;
+    [SerializeField] private string dialogueNode = "OtherDialogue";
+    
     private void Start()
     {
         dialogueRunner = FindObjectOfType<DialogueRunner>();
@@ -18,6 +19,6 @@ public class CharacterInteraction : MonoBehaviour
     [ContextMenu("Launch Dialogue")]
     public void LaunchDialogue()
     {
-        dialogueRunner.StartDialogue("OtherDialogue");
+        dialogueRunner.StartDialogue(dialogueNode);
     }
 }
