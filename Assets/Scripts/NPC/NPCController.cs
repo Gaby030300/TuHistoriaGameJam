@@ -10,6 +10,10 @@ public class NPCController : MonoBehaviour
 {
     [SerializeField] private GameObject alertIcon;
 
+    [Header("Player")]
+    [SerializeField] private Transform playerTransform;
+    [SerializeField] private float detectionDistance;
+
     [Header("AI System")]
     [SerializeField] private AIPath aiPath;
 
@@ -40,6 +44,8 @@ public class NPCController : MonoBehaviour
         {
             OnDestinationLeft?.Invoke();
         }
+
+        DistanceToFollowPlayer();
     }
 
     private void HandleDestinationReached()
@@ -52,5 +58,19 @@ public class NPCController : MonoBehaviour
     {
         zoomCamera.enabled = false;
         firstCamera.enabled = true;
+    }
+
+    private void DistanceToFollowPlayer()
+    {
+        float distanceToPlayer = Vector3.Distance(transform.position, playerTransform.position);
+
+        if (distanceToPlayer < detectionDistance)
+        {
+            aiPath.enabled = true;
+        }
+        else
+        {
+            aiPath.enabled = false;
+        }
     }
 }

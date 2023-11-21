@@ -1327,6 +1327,14 @@ PrefabInstance:
       propertyPath: firstCamera
       value: 
       objectReference: {fileID: 820494033}
+    - target: {fileID: 4565959417066015132, guid: 7413a057d49de844f939bd9fad1a77bb, type: 3}
+      propertyPath: playerTransform
+      value: 
+      objectReference: {fileID: 1717148584}
+    - target: {fileID: 4565959417066015132, guid: 7413a057d49de844f939bd9fad1a77bb, type: 3}
+      propertyPath: detectionDistance
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8297829735360874985, guid: 7413a057d49de844f939bd9fad1a77bb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.04
