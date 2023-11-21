@@ -2,7 +2,7 @@
 tags:
 ---
 Puni: Hemlo!
-Puni: Got many options
+Puni: [wave]Got many options[/wave]
 Puni: Wanna see them?
     ->Ja!
         -> This one
@@ -13,6 +13,10 @@ Puni: Wanna see them?
             Other: Gut!
             Puni: Ich lese ein Buch! and stuff
     ->Nein!
-        Puni: Your loss... sucker
+        Puni: Your loss...[pause=1000] [/pause] sucker
         Other: Your mom
+Puni: Anyway, wanna repeat it all over again?
+    ->Yes
+        <<jump Start>>
+    ->No
 ===

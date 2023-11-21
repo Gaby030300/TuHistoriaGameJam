@@ -371,6 +371,7 @@ GameObject:
   - component: {fileID: 543749066}
   - component: {fileID: 543749065}
   - component: {fileID: 543749067}
+  - component: {fileID: 543749068}
   m_Layer: 0
   m_Name: PJ
   m_TagString: Untagged
@@ -460,6 +461,18 @@ MonoBehaviour:
   characterName: Puni
   messageBubbleOffset: {x: 0, y: 1, z: 0}
   offsetUsesRotation: 0
+--- !u!114 &543749068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 543749063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4437643c30372184395b5b80cd8e7246, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1324339453
 GameObject:
   m_ObjectHideFlags: 0
@@ -564,6 +577,10 @@ PrefabInstance:
     - target: {fileID: 429547335, guid: 8d6c09a6f35ab93498a17f1a2b9375a9, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429547336, guid: 8d6c09a6f35ab93498a17f1a2b9375a9, type: 3}
+      propertyPath: m_text
+      value: Dialogue Text
       objectReference: {fileID: 0}
     - target: {fileID: 1222408367283395131, guid: 8d6c09a6f35ab93498a17f1a2b9375a9, type: 3}
       propertyPath: m_SizeDelta.y
