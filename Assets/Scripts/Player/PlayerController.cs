@@ -1,25 +1,41 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float speedMovement;
 
-    private Vector2 lastClickPosition;
+    private Vector2 targetPosition;
     private bool isMoving;
 
     private void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        HandleInput();
+        MoveTowardsTarget();
+    }
+
+    private void HandleInput()
+    {
+        if (Input.GetMouseButtonDown(0))
         {
-            lastClickPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            SetTargetPosition();
             isMoving = true;
         }
-        if(isMoving && (Vector2)transform.position != lastClickPosition) 
+    }
+
+    private void SetTargetPosition()
+    {
+        targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+    }
+
+    private void MoveTowardsTarget()
+    {
+        if (isMoving && (Vector2) transform.position != targetPosition)
         {
-            float step  = Time.deltaTime * speedMovement;
-            transform.position = Vector2.MoveTowards(transform.position, lastClickPosition, step);
+            float step = Time.deltaTime * speedMovement;
+            transform.position = Vector2.MoveTowards(transform.position, targetPosition, step);
         }
         else
         {
