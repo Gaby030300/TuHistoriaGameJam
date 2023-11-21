@@ -1,6 +1,7 @@
 ﻿title: Start
 tags:
 ---
+<<declare $social_battery = 100 >>
 Puni: Hemlo!
 Puni: [wave]Got many options[/wave]
 Puni: Wanna see them?
@@ -14,6 +15,7 @@ Puni: Wanna see them?
             Puni: Ich lese ein Buch! and stuff
     ->Nein!
         Puni: Your loss...[pause=1000] [/pause] sucker
+        <<set $social_battery -= 10>>
         Other: Your mom
 Puni: Anyway, wanna repeat it all over again?
     ->Yes
