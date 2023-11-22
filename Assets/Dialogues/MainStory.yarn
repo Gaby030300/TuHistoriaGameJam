@@ -3,24 +3,27 @@ tags:
 
 ---
 <<set $social_battery = 100>>
-Puni: Um, hi there. I'm Puni. I, [pause=1000] um, [/pause] really like games.
-Other: Oh, hey. Nice to meet you. What brings you here?
-
-Puni: Oh.. you where in another conversation
-Other: It's ok
+Puni: Um, hi there. I'm Puni. I...[pause=1000] um, [/pause] really like games.
+Puni: Sorry I interrupted you!
+<<set $social_battery -=5>>
+Other: Oh, hey. It's ok
+Other: Nice to meet you. I'm Other
+Other: What brings you here?
   -> Uh, sorry
     Puni: I'm not sure why I'm here. Games, I guess...
     <<set $social_battery -= 15>>
-  -> Yeah, games, definitely! 
+  -> Games, definitely! 
+    Puni: Nothing more but Games, definitely!
     Puni: I'm into that too.
     <<set $social_battery -= 5>>
 
 Other: So, what aspect of gaming interests you?
-  -> Game design and storytelling
+  -> Game design
+    Puni: Game design and storytelling.
     Puni: They're so intricate and fascinating.
     <<set $social_battery += 10>>
   -> Um, everything,
-    Puni: I [pause=500]... [/pause]guess.
+    Puni: I [pause=500]... [/pause]guess, everything?.
     <<set $social_battery -= 15>>
 
 Other: Yeah, it's a competitive field. Are you ready for that challenge?
@@ -28,6 +31,7 @@ Other: Yeah, it's a competitive field. Are you ready for that challenge?
     Puni: I'm determined to make my mark.
     <<set $social_battery += 15>>
   -> I'm not entirely sure
+    Puni: I'm not entirely sure
     Puni: But I'm trying.
     <<set $social_battery -= 10>>
 
@@ -43,7 +47,10 @@ Other: Any recent gaming projects you admire?
 <<if $social_battery >= 50>>
     Other: Wanna discuss more gaming stuff later?
     Puni: Absolutely! There's this fascinating concept I've been exploring...
-    <<set $social_battery += 20>>    
+    Other: This is my card
+    Other: I need to leave soon but stay in touch!
+    <<set $social_battery += 20>>
+    Puni: I'll do! Thanks!    
 <<else>>
     Other: I need to go, see you around?
     Puni: Sure...
