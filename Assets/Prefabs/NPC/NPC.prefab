@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8297829735360874985}
   - component: {fileID: 7806129157152167811}
   - component: {fileID: 4565959417066015132}
+  - component: {fileID: 1379837839907125812}
   - component: {fileID: 2626379372488373340}
   - component: {fileID: 904996153652835063}
   - component: {fileID: 5143691746768255744}
@@ -105,6 +106,21 @@ MonoBehaviour:
   aiPath: {fileID: 904996153652835063}
   zoomCamera: {fileID: 0}
   firstCamera: {fileID: 0}
+--- !u!114 &1379837839907125812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2328153498296770131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e94f9d9f6e80f984f94976b04551b1f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Other
+  messageBubbleOffset: {x: 0, y: 1, z: 0}
+  offsetUsesRotation: 0
 --- !u!114 &2626379372488373340
 MonoBehaviour:
   m_ObjectHideFlags: 0
