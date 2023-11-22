@@ -59,7 +59,8 @@ public class NPCController : MonoBehaviour
     }
 
     private void DistanceToFollowPlayer()
-    {
+    {        
+
         float distanceToPlayer = Vector3.Distance(transform.position, playerTransform.position);
 
         if (distanceToPlayer < detectionDistance)
