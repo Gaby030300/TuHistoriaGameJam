@@ -17,7 +17,6 @@ public class PlayerController : MonoBehaviour
 
     private Vector2 targetPosition;
     private bool isMoving;
-    private bool isPathReady = false; 
 
     private void Update()
     {
