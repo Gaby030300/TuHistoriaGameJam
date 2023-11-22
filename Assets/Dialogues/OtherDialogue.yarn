@@ -1,0 +1,10 @@
+﻿title: OtherDialogue
+tags:
+---
+Other: So you interacted first don't you?
+Puni: Yep, only this time to check
+<<if visited("Start") is true>>
+    Puni: We already talked before
+    Puni: And your Social Battery is {$social_battery}
+<<endif>>
+===
