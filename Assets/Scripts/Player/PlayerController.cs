@@ -8,7 +8,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [Header("Player Configurations")]
-    [SerializeField] private float speedMovement;
+    public float speedMovement;
 
     [Header("Pathfinding")]
     [SerializeField] private Seeker seeker;
