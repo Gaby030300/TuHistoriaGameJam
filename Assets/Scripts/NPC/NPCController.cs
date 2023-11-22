@@ -8,8 +8,6 @@ using Cinemachine;
 
 public class NPCController : MonoBehaviour
 {
-    [SerializeField] private GameObject alertIcon;
-
     [Header("Player")]
     [SerializeField] private Transform playerTransform;
     [SerializeField] private float detectionDistance;
@@ -26,7 +24,6 @@ public class NPCController : MonoBehaviour
 
     void Start()
     {
-        alertIcon.SetActive(false);
         OnDestinationReached += HandleDestinationReached;
         OnDestinationLeft += HandleDestinationLeft;
 
@@ -52,6 +49,7 @@ public class NPCController : MonoBehaviour
     {
         zoomCamera.enabled = true;
         firstCamera.enabled = false;
+        
     }    
     
     private void HandleDestinationLeft()
