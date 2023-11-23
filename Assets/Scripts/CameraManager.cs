@@ -3,12 +3,11 @@ using Pathfinding;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
-public class CameraZoom : MonoBehaviour
+public class CameraManager : MonoBehaviour
 {
-    public static CameraZoom _instance;
-
     public Action OnDestinationReached;
     public Action OnDestinationLeft;
 
@@ -16,21 +15,23 @@ public class CameraZoom : MonoBehaviour
     [SerializeField] private CinemachineVirtualCamera zoomCamera;
     [SerializeField] private CinemachineVirtualCamera firstCamera;
 
-    [Header("NPC Controller")]
-    [SerializeField] private NPCController npcController;
+    public static CameraManager Instance { get; private set; }
+    private List<NPCController> npcControllers = new();
 
     private void Awake()
     {
-        _instance = this;        
+        if (Instance == null)
+        {
+            Instance = this;
+        }
     }
 
     void Start()
     {
-        OnDestinationReached -= HandleDestinationReached;
-        OnDestinationLeft -= HandleDestinationLeft;
-
         OnDestinationReached += HandleDestinationReached;
         OnDestinationLeft += HandleDestinationLeft;
+
+        GetAllNPCs();
 
         zoomCamera.Priority = 9;
         firstCamera.Priority = 10;
@@ -38,7 +39,7 @@ public class CameraZoom : MonoBehaviour
 
     private void Update()
     {
-        if (npcController.isReached)
+        if (npcControllers.Any(npc => npc.isReached))
         {
             OnDestinationReached?.Invoke();
         }
@@ -52,15 +53,21 @@ public class CameraZoom : MonoBehaviour
     {
         zoomCamera.Priority = 10;
         firstCamera.Priority = 9;
-        _instance = this;
+        Instance = this;
     }
 
     private void HandleDestinationLeft()
     {
-        if (_instance == this)
+        if (Instance == this)
         {
             zoomCamera.Priority = 9;
             firstCamera.Priority = 10;
         }
+    }
+
+    private void GetAllNPCs()
+    {
+        NPCController[] npcs = FindObjectsOfType<NPCController>();
+        npcControllers.AddRange(npcs);
     }
 }

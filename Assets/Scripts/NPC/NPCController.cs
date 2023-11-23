@@ -19,17 +19,7 @@ public class NPCController : MonoBehaviour
     [Header("Dialogue System")]
     [SerializeField] private DialogueRunner dialogueRunner;
 
-    [Header("Camera Manager")]
-    CameraZoom cameraZoom;
-
-    [HideInInspector] public bool isReached;   
-
-    void Start()
-    {
-        cameraZoom = GetComponentInParent<CameraZoom>();
-        UnsubscribeAction();
-        SubscribeAction();
-    }
+    [HideInInspector] public bool isReached;
 
     private void Update()
     {
@@ -52,11 +42,10 @@ public class NPCController : MonoBehaviour
         }
     }
 
-
     private void HandleDestinationReached()
     {
-        UnsubscribeAction();
-        //Aqui va código cuando player se acerca
+        Debug.Log("Se acerca camara y hace alguna función especifica");
+
     }
 
     private void DistanceToFollowPlayer()
@@ -71,14 +60,5 @@ public class NPCController : MonoBehaviour
         {
             aiPath.enabled = false;
         }
-    }
-
-    private void UnsubscribeAction()
-    {
-        cameraZoom.OnDestinationReached -= HandleDestinationReached;
-    }
-    private void SubscribeAction()
-    {
-        cameraZoom.OnDestinationReached += HandleDestinationReached;
     }
 }
