@@ -103,9 +103,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 0}
   detectionDistance: 4
+  playerController: {fileID: 0}
   aiPath: {fileID: 904996153652835063}
   zoomCamera: {fileID: 0}
   firstCamera: {fileID: 0}
+  dialogueRunner: {fileID: 0}
 --- !u!114 &1379837839907125812
 MonoBehaviour:
   m_ObjectHideFlags: 0

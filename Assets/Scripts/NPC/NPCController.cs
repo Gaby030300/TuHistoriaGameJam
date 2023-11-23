@@ -9,6 +9,8 @@ using Yarn.Unity;
 
 public class NPCController : MonoBehaviour
 {
+    private static NPCController _instance;
+
     [Header("Player")]
     [SerializeField] private Transform playerTransform;
     [SerializeField] private float detectionDistance;
@@ -21,19 +23,25 @@ public class NPCController : MonoBehaviour
     [SerializeField] private CinemachineVirtualCamera zoomCamera;
     [SerializeField] private CinemachineVirtualCamera firstCamera;
 
+
     [Header("Dialogue System")]
     [SerializeField] private DialogueRunner dialogueRunner;
 
     public Action OnDestinationReached;
     public Action OnDestinationLeft;
 
+    private void Awake()
+    {
+        _instance = this;
+    }
+
     void Start()
     {
         OnDestinationReached += HandleDestinationReached;
         OnDestinationLeft += HandleDestinationLeft;
 
-        zoomCamera.enabled = false;
-        firstCamera.enabled = true;
+        zoomCamera.Priority = 9;
+        firstCamera.Priority = 10;
     }
 
     private void Update()
@@ -51,25 +59,23 @@ public class NPCController : MonoBehaviour
     }
 
     private void HandleDestinationReached()
-    {
-        zoomCamera.enabled = true;
-        firstCamera.enabled = false;
-
-        //if (dialogueRunner.verboseLogging)
-        //{
-        //    playerController.speedMovement = 0;
-        //}        
+    {        
+        zoomCamera.Priority = 10;
+        firstCamera.Priority = 9;
+        _instance = this;
     }    
     
     private void HandleDestinationLeft()
     {
-        zoomCamera.enabled = false;
-        firstCamera.enabled = true;
+        if (_instance == this) 
+        {
+            zoomCamera.Priority = 9;
+            firstCamera.Priority = 10;
+        }
     }
 
     private void DistanceToFollowPlayer()
-    {        
-
+    {      
         float distanceToPlayer = Vector3.Distance(transform.position, playerTransform.position);
 
         if (distanceToPlayer < detectionDistance)
