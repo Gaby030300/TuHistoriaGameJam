@@ -14,7 +14,6 @@ public class NPCController : MonoBehaviour
     [Header("Player")]
     [SerializeField] private Transform playerTransform;
     [SerializeField] private float detectionDistance;
-    [SerializeField] private PlayerController playerController;
 
     [Header("AI System")]
     [SerializeField] private AIPath aiPath;
