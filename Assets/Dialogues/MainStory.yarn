@@ -1,24 +1,59 @@
 ﻿title: Start
-tags:
+tags: 
+
 ---
-<<declare $social_battery = 100 >>
-Puni: Hemlo!
-Puni: [wave]Got many options[/wave]
-Puni: Wanna see them?
-    ->Ja!
-        -> This one
-            Other: Nice option
-            Puni: I know!!
-            Puni: It wasn't easy to set, I hate Unity now
-        -> Another one
-            Other: Gut!
-            Puni: Ich lese ein Buch! and stuff
-    ->Nein!
-        Puni: Your loss...[pause=1000] [/pause] sucker
-        <<set $social_battery -= 10>>
-        Other: Your mom
-Puni: Anyway, wanna repeat it all over again?
-    ->Yes
-        <<jump Start>>
-    ->No
+<<set $social_battery = 100>>
+Puni: Um, hi there. I'm Puni. I...[pause=1000] um, [/pause] really like games.
+Puni: Sorry I interrupted you!
+<<set $social_battery -=5>>
+Other: Oh, hey. It's ok
+Other: Nice to meet you. I'm Other
+Other: What brings you here?
+  -> Uh, sorry
+    Puni: I'm not sure why I'm here. Games, I guess...
+    <<set $social_battery -= 15>>
+  -> Games, definitely! 
+    Puni: Nothing more but Games, definitely!
+    Puni: I'm into that too.
+    <<set $social_battery -= 5>>
+
+Other: So, what aspect of gaming interests you?
+  -> Game design
+    Puni: Game design and storytelling.
+    Puni: They're so intricate and fascinating.
+    <<set $social_battery += 10>>
+  -> Um, everything,
+    Puni: I [pause=500]... [/pause]guess, everything?.
+    <<set $social_battery -= 15>>
+
+Other: Yeah, it's a competitive field. Are you ready for that challenge?
+  -> Absolutely!
+    Puni: I'm determined to make my mark.
+    <<set $social_battery += 15>>
+  -> I'm not entirely sure
+    Puni: I'm not entirely sure
+    Puni: But I'm trying.
+    <<set $social_battery -= 10>>
+
+Puni: Hehe...
+Other: Any recent gaming projects you admire?
+  -> Oh, definitely! 
+    Puni: There's this indie game that's been incredible.
+    <<set $social_battery += 10>>
+  -> I guess
+    Puni: I've seen a few... They're okay.
+    <<set $social_battery -= 15>>
+
+<<if $social_battery >= 50>>
+    Other: Wanna discuss more gaming stuff later?
+    Puni: Absolutely! There's this fascinating concept I've been exploring...
+    Other: This is my card
+    Other: I need to leave soon but stay in touch!
+    <<set $social_battery += 20>>
+    Puni: I'll do! Thanks!    
+<<else>>
+    Other: I need to go, see you around?
+    Puni: Sure...
+    Puni: I'm not built for social interactions
+<<endif>>
 ===
