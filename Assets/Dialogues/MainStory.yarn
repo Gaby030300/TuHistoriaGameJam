@@ -6,6 +6,7 @@ tags:
 Puni: Um, hi there. I'm Puni. I...[pause=1000] um, [/pause] really like games.
 Puni: Sorry I interrupted you!
 <<set $social_battery -=5>>
+<<popup>>
 Other: Oh, hey. It's ok
 Other: Nice to meet you. I'm Other
 Other: What brings you here?
