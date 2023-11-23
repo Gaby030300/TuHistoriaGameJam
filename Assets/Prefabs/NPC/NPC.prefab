@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8297829735360874985}
   - component: {fileID: 7806129157152167811}
   - component: {fileID: 4565959417066015132}
+  - component: {fileID: 9092078275694094162}
   - component: {fileID: 1379837839907125812}
   - component: {fileID: 2626379372488373340}
   - component: {fileID: 904996153652835063}
@@ -103,11 +104,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 0}
   detectionDistance: 4
-  playerController: {fileID: 0}
   aiPath: {fileID: 904996153652835063}
+  dialogueRunner: {fileID: 0}
+  isReached: 0
+--- !u!114 &9092078275694094162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2328153498296770131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9766d21e1d8fa4e4d9cc0725af3dbb06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   zoomCamera: {fileID: 0}
   firstCamera: {fileID: 0}
-  dialogueRunner: {fileID: 0}
+  npcController: {fileID: 4565959417066015132}
 --- !u!114 &1379837839907125812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,7 +181,7 @@ MonoBehaviour:
   radius: 0.5
   height: 2
   canMove: 1
-  maxSpeed: 1
+  maxSpeed: 2
   gravity: {x: 0, y: 0, z: 0}
   groundMask:
     serializedVersion: 2
@@ -176,7 +190,7 @@ MonoBehaviour:
   repathRateCompatibility: NaN
   canSearchCompability: 0
   orientation: 1
-  enableRotation: 1
+  enableRotation: 0
   autoRepath:
     mode: 2
     interval: 0.5

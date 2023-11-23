@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6397469875653661706}
   - component: {fileID: 8384670313446597980}
   - component: {fileID: 9001418706877629452}
+  - component: {fileID: 491515561561773226}
   - component: {fileID: 5160041706717261501}
   - component: {fileID: 8966074008040177771}
   - component: {fileID: 8185077372576699592}
@@ -103,11 +104,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 0}
   detectionDistance: 4
-  playerController: {fileID: 0}
   aiPath: {fileID: 8185077372576699592}
+  dialogueRunner: {fileID: 0}
+  isReached: 0
+--- !u!114 &491515561561773226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4884738236662238880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9766d21e1d8fa4e4d9cc0725af3dbb06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   zoomCamera: {fileID: 0}
   firstCamera: {fileID: 0}
-  dialogueRunner: {fileID: 0}
+  npcController: {fileID: 9001418706877629452}
 --- !u!114 &5160041706717261501
 MonoBehaviour:
   m_ObjectHideFlags: 0

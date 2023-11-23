@@ -164,6 +164,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 95526452}
     m_Modifications:
+    - target: {fileID: 491515561561773226, guid: de32c8f6a3e128c44be9ba2a9763eab0, type: 3}
+      propertyPath: zoomCamera
+      value: 
+      objectReference: {fileID: 1604314465}
+    - target: {fileID: 491515561561773226, guid: de32c8f6a3e128c44be9ba2a9763eab0, type: 3}
+      propertyPath: firstCamera
+      value: 
+      objectReference: {fileID: 820494033}
     - target: {fileID: 1179182111741451226, guid: de32c8f6a3e128c44be9ba2a9763eab0, type: 3}
       propertyPath: target
       value: 
@@ -213,14 +221,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9001418706877629452, guid: de32c8f6a3e128c44be9ba2a9763eab0, type: 3}
-      propertyPath: zoomCamera
-      value: 
-      objectReference: {fileID: 1604314465}
-    - target: {fileID: 9001418706877629452, guid: de32c8f6a3e128c44be9ba2a9763eab0, type: 3}
-      propertyPath: firstCamera
-      value: 
-      objectReference: {fileID: 820494033}
-    - target: {fileID: 9001418706877629452, guid: de32c8f6a3e128c44be9ba2a9763eab0, type: 3}
       propertyPath: dialogueRunner
       value: 
       objectReference: {fileID: 8954747795960528457}
@@ -228,10 +228,6 @@ PrefabInstance:
       propertyPath: playerTransform
       value: 
       objectReference: {fileID: 1717148584}
-    - target: {fileID: 9001418706877629452, guid: de32c8f6a3e128c44be9ba2a9763eab0, type: 3}
-      propertyPath: playerController
-      value: 
-      objectReference: {fileID: 1717148594}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1522,26 +1518,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 95526452}
     m_Modifications:
-    - target: {fileID: 904996153652835063, guid: 7413a057d49de844f939bd9fad1a77bb, type: 3}
-      propertyPath: maxSpeed
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 904996153652835063, guid: 7413a057d49de844f939bd9fad1a77bb, type: 3}
-      propertyPath: enableRotation
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2328153498296770131, guid: 7413a057d49de844f939bd9fad1a77bb, type: 3}
       propertyPath: m_Name
       value: NPC
       objectReference: {fileID: 0}
-    - target: {fileID: 4565959417066015132, guid: 7413a057d49de844f939bd9fad1a77bb, type: 3}
-      propertyPath: zoomCamera
-      value: 
-      objectReference: {fileID: 1604314465}
-    - target: {fileID: 4565959417066015132, guid: 7413a057d49de844f939bd9fad1a77bb, type: 3}
-      propertyPath: firstCamera
-      value: 
-      objectReference: {fileID: 820494033}
     - target: {fileID: 4565959417066015132, guid: 7413a057d49de844f939bd9fad1a77bb, type: 3}
       propertyPath: dialogueRunner
       value: 
@@ -1594,6 +1574,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9092078275694094162, guid: 7413a057d49de844f939bd9fad1a77bb, type: 3}
+      propertyPath: zoomCamera
+      value: 
+      objectReference: {fileID: 1604314465}
+    - target: {fileID: 9092078275694094162, guid: 7413a057d49de844f939bd9fad1a77bb, type: 3}
+      propertyPath: firstCamera
+      value: 
+      objectReference: {fileID: 820494033}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

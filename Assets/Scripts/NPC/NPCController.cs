@@ -9,8 +9,6 @@ using Yarn.Unity;
 
 public class NPCController : MonoBehaviour
 {
-    private static NPCController _instance;
-
     [Header("Player")]
     [SerializeField] private Transform playerTransform;
     [SerializeField] private float detectionDistance;
@@ -18,63 +16,51 @@ public class NPCController : MonoBehaviour
     [Header("AI System")]
     [SerializeField] private AIPath aiPath;
 
-    [Header("Camera System")]
-    [SerializeField] private CinemachineVirtualCamera zoomCamera;
-    [SerializeField] private CinemachineVirtualCamera firstCamera;
-
-
     [Header("Dialogue System")]
     [SerializeField] private DialogueRunner dialogueRunner;
 
-    public Action OnDestinationReached;
-    public Action OnDestinationLeft;
+    [Header("Camera Manager")]
+    CameraZoom cameraZoom;
 
-    private void Awake()
-    {
-        _instance = this;
-    }
+    [HideInInspector] public bool isReached;   
 
     void Start()
     {
-        OnDestinationReached += HandleDestinationReached;
-        OnDestinationLeft += HandleDestinationLeft;
-
-        zoomCamera.Priority = 9;
-        firstCamera.Priority = 10;
+        cameraZoom = GetComponentInParent<CameraZoom>();
+        UnsubscribeAction();
+        SubscribeAction();
     }
 
     private void Update()
     {
-        if (aiPath.reachedDestination)
-        {
-            OnDestinationReached?.Invoke();
-        }
-        else
-        {
-            OnDestinationLeft?.Invoke();
-        }
-
+        ActivateActions();
         DistanceToFollowPlayer();
     }
 
-    private void HandleDestinationReached()
-    {        
-        zoomCamera.Priority = 10;
-        firstCamera.Priority = 9;
-        _instance = this;
-    }    
-    
-    private void HandleDestinationLeft()
+    private void ActivateActions()
     {
-        if (_instance == this) 
+        bool destinationReached = aiPath.reachedDestination;
+
+        if (destinationReached != isReached)
         {
-            zoomCamera.Priority = 9;
-            firstCamera.Priority = 10;
+            isReached = destinationReached;
+
+            if (isReached)
+            {
+                HandleDestinationReached();
+            }
         }
     }
 
+
+    private void HandleDestinationReached()
+    {
+        UnsubscribeAction();
+        //Aqui va código cuando player se acerca
+    }
+
     private void DistanceToFollowPlayer()
-    {      
+    {
         float distanceToPlayer = Vector3.Distance(transform.position, playerTransform.position);
 
         if (distanceToPlayer < detectionDistance)
@@ -85,5 +71,14 @@ public class NPCController : MonoBehaviour
         {
             aiPath.enabled = false;
         }
+    }
+
+    private void UnsubscribeAction()
+    {
+        cameraZoom.OnDestinationReached -= HandleDestinationReached;
+    }
+    private void SubscribeAction()
+    {
+        cameraZoom.OnDestinationReached += HandleDestinationReached;
     }
 }
