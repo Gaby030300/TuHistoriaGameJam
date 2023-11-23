@@ -3,12 +3,14 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
     [Header("Player Configurations")]
-    public float speedMovement;
+    [SerializeField] private float speedMovement;
+    private float currentSpeed;
 
     [Header("Pathfinding")]
     [SerializeField] private Seeker seeker;
@@ -18,11 +20,23 @@ public class PlayerController : MonoBehaviour
     private Vector2 targetPosition;
     private bool isMoving;
 
+    public Action OnDialogStart;
+    public Action OnDialogComplete;
+
+    private void Awake()
+    {
+        currentSpeed = speedMovement;
+    }
+
     private void Update()
     {
         HandleInput();
         MoveTowardsTarget();
+
+        OnDialogStart += HandleDialogStart;
+        OnDialogComplete += HandleDialogComplete;       
     }
+
 
     private void HandleInput()
     {
@@ -70,6 +84,16 @@ public class PlayerController : MonoBehaviour
         {
             currentWaypoint++;
         }
+    }
+
+    public void HandleDialogComplete()
+    {
+        speedMovement = currentSpeed;
+    }
+
+    public void HandleDialogStart()
+    {
+        speedMovement = 0;        
     }
 
 }
