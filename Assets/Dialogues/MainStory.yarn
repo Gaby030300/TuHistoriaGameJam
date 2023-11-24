@@ -13,37 +13,45 @@ Other: What brings you here?
   -> Uh, sorry
     Puni: I'm not sure why I'm here. Games, I guess...
     <<set $social_battery -= 15>>
+    <<popup>>
   -> Games, definitely! 
     Puni: Nothing more but Games, definitely!
     Puni: I'm into that too.
     <<set $social_battery -= 5>>
+    <<popup>>
 
 Other: So, what aspect of gaming interests you?
   -> Game design
     Puni: Game design and storytelling.
     Puni: They're so intricate and fascinating.
     <<set $social_battery += 10>>
+    <<popup>>
   -> Um, everything,
     Puni: I [pause=500]... [/pause]guess, everything?.
     <<set $social_battery -= 15>>
+    <<popup>>
 
 Other: Yeah, it's a competitive field. Are you ready for that challenge?
   -> Absolutely!
     Puni: I'm determined to make my mark.
     <<set $social_battery += 15>>
+    <<popup>>
   -> I'm not entirely sure
     Puni: I'm not entirely sure
     Puni: But I'm trying.
     <<set $social_battery -= 10>>
+    <<popup>>
 
 Puni: Hehe...
 Other: Any recent gaming projects you admire?
   -> Oh, definitely! 
     Puni: There's this indie game that's been incredible.
     <<set $social_battery += 10>>
+    <<popup>>
   -> I guess
     Puni: I've seen a few... They're okay.
     <<set $social_battery -= 15>>
+    <<popup>>
 
 <<if $social_battery >= 50>>
     Other: Wanna discuss more gaming stuff later?
@@ -51,6 +59,7 @@ Other: Any recent gaming projects you admire?
     Other: This is my card
     Other: I need to leave soon but stay in touch!
     <<set $social_battery += 20>>
+    <<popup>>
     Puni: I'll do! Thanks!    
 <<else>>
     Other: I need to go, see you around?

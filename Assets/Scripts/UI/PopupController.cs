@@ -16,27 +16,42 @@ public class PopupController : MonoBehaviour
     [Tooltip("Time the popup stays on the screen before leaving")]
     public float delay = 1.0f; // 
 
+    [SerializeField] private Ease easeIn;
+    [SerializeField] private Ease easeOut;
+
+    private SliderController sliderController;
+    private SocialBatteryManager socialBatteryManager;
     private void Awake()
     {
         DialogueRunner dialogueRunner = FindObjectOfType<DialogueRunner>();
-        dialogueRunner.AddCommandHandler("popup",AnimatePopup);
+        dialogueRunner.AddCommandHandler("popup",CallPopup);
+
+        socialBatteryManager = FindObjectOfType<SocialBatteryManager>();
+        sliderController = GetComponent<SliderController>();
     }
 
     void Start()
     {
-        targetPosition = new Vector3(0, Screen.height / 2, 0);
-        offScreenPosition=new Vector3(Screen.width, Screen.height/2, 0);
+        float popupSize = popup.rect.height / 2;
+        targetPosition = new Vector3(0, Screen.height / 2 - popupSize, 0);
+        offScreenPosition=new Vector3(Screen.width, Screen.height/2 - popupSize, 0);
         popup.anchoredPosition3D = offScreenPosition;
 
         //AnimatePopup();
     }
 
+    public void CallPopup()
+    {
+        float sb = socialBatteryManager.GetSocialBattery();
+        sliderController.OnSliderValueChanged(sb);
+        AnimatePopup();
+    }
     
     [ContextMenu("popup")]
     public void AnimatePopup()
     {
         popup.DOAnchorPos3D(targetPosition, duration)
-            .SetEase(Ease.OutExpo)
+            .SetEase(easeOut)
             .OnComplete(() => HidePopup());
     }
 
@@ -44,7 +59,7 @@ public class PopupController : MonoBehaviour
     void HidePopup()
     {
         popup.DOAnchorPos3D(offScreenPosition, duration)
-            .SetEase(Ease.InExpo)
+            .SetEase(easeIn)
             .SetDelay(delay);
     }
 }

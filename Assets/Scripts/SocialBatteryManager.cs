@@ -15,10 +15,12 @@ public class SocialBatteryManager : MonoBehaviour
     }
 
     [ContextMenu("Get SB")]
-    public void GetSocialBattery()
+    public float GetSocialBattery()
     {
+        if(socialBattery>100) SetSocialBattery(100);
+        if(socialBattery<0) SetSocialBattery(0);
         variableStorage.TryGetValue("$social_battery", out socialBattery);
-        Debug.Log(socialBattery);
+        return socialBattery;
     }
     
     
