@@ -15,6 +15,8 @@ namespace Yarn.Unity.Example
         [Tooltip("if true, then apply messageBubbleOffset relative to this transform's rotation and scale")]
         public bool offsetUsesRotation = false;
 
+        public string firstDialogue;
+        
         public Vector3 positionWithOffset
         { 
             get {

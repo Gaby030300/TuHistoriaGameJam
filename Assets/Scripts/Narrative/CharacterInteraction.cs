@@ -17,8 +17,8 @@ public class CharacterInteraction : MonoBehaviour
     }
 
     [ContextMenu("Launch Dialogue")]
-    public void LaunchDialogue()
+    public void LaunchDialogue(string dialogue)
     {
-        dialogueRunner.StartDialogue(dialogueNode);
+        dialogueRunner.StartDialogue(dialogue);
     }
 }

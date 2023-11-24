@@ -6,6 +6,7 @@ using System;
 using Unity.VisualScripting;
 using Cinemachine;
 using Yarn.Unity;
+using Yarn.Unity.Example;
 
 public class NPCController : MonoBehaviour
 {
@@ -16,10 +17,17 @@ public class NPCController : MonoBehaviour
     [Header("AI System")]
     [SerializeField] private AIPath aiPath;
 
-    [Header("Dialogue System")]
-    [SerializeField] private DialogueRunner dialogueRunner;
+    [Header("Dialogue System")] [SerializeField]
+    private CharacterInteraction characterInteraction;
+    private YarnCharacter character;
 
     [HideInInspector] public bool isReached;
+
+    private void Start()
+    {
+        characterInteraction = FindObjectOfType<CharacterInteraction>();
+        character = GetComponent<YarnCharacter>();
+    }
 
     private void Update()
     {
@@ -44,8 +52,8 @@ public class NPCController : MonoBehaviour
 
     private void HandleDestinationReached()
     {
-        Debug.Log("Se acerca camara y hace alguna función especifica");
-
+        Debug.Log("Se acerca camara y hace alguna funciï¿½n especifica");
+        characterInteraction.LaunchDialogue(character.firstDialogue);
     }
 
     private void DistanceToFollowPlayer()

@@ -1518,6 +1518,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 95526452}
     m_Modifications:
+    - target: {fileID: 1379837839907125812, guid: 7413a057d49de844f939bd9fad1a77bb, type: 3}
+      propertyPath: firstDialogue
+      value: OtherDialogue
+      objectReference: {fileID: 0}
     - target: {fileID: 2328153498296770131, guid: 7413a057d49de844f939bd9fad1a77bb, type: 3}
       propertyPath: m_Name
       value: NPC
