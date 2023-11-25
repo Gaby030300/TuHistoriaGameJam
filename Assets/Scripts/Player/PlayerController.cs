@@ -100,11 +100,14 @@ public class PlayerController : MonoBehaviour
     {
         speedMovement = currentSpeed;
         isDialogueCompleted = true;
+        animator.SetBool("isTalking", isDialogueCompleted);
     }
 
     public void HandleDialogStart()
     {
         speedMovement = 0;
+        isDialogueCompleted = false;
+        animator.SetBool("isTalking", isDialogueCompleted);
     }
 
     private void CharacterDirection()
