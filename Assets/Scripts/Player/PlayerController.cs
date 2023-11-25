@@ -13,10 +13,15 @@ public class PlayerController : MonoBehaviour
     private Path path;
     private int currentWaypoint = 0;
 
+    [Header("Animator")]
+    [SerializeField] private Animator animator;
+
+
     private Vector2 targetPosition;
 
     private bool isMoving;
     private bool isDialogueCompleted;
+    private bool isFacingRight;
 
     public Action OnDialogStart;
     public Action OnDialogComplete;
@@ -72,8 +77,13 @@ public class PlayerController : MonoBehaviour
         if (currentWaypoint >= path.vectorPath.Count)
         {
             isMoving = false;
+            animator.SetBool("isWalking", isMoving);
             return;
         }
+
+        isMoving = true;
+
+        CharacterDirection();
 
         float step = speedMovement * Time.deltaTime;
         transform.position = Vector2.MoveTowards(transform.position, path.vectorPath[currentWaypoint], step);
@@ -82,6 +92,8 @@ public class PlayerController : MonoBehaviour
         {
             currentWaypoint++;
         }
+        animator.SetBool("isWalking", isMoving);
+
     }
 
     public void HandleDialogComplete()
@@ -93,6 +105,29 @@ public class PlayerController : MonoBehaviour
     public void HandleDialogStart()
     {
         speedMovement = 0;
+    }
+
+    private void CharacterDirection()
+    {
+        Vector2 direction = (path.vectorPath[currentWaypoint] - transform.position).normalized;
+
+        if (direction.x < 0 && !isFacingRight)
+        {
+            Flip();
+        }
+        else if (direction.x > 0 && isFacingRight)
+        {
+            Flip();
+        }
+    }
+
+    private void Flip()
+    {
+        Vector3 currentScale = transform.localScale;
+        currentScale.x *= -1;
+        transform.localScale = currentScale;
+
+        isFacingRight = !isFacingRight;
     }
 
 }
