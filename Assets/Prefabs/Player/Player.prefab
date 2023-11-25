@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7030987027234365309}
   - component: {fileID: 1838381095147863961}
   - component: {fileID: 773865434543102614}
+  - component: {fileID: 8571990344313740640}
   - component: {fileID: 6040839088677582549}
   - component: {fileID: 7866651094544074102}
   - component: {fileID: 3390779051913580121}
@@ -115,7 +116,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!58 &773865434543102614
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -151,6 +152,34 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &8571990344313740640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8208959067134419317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 373b52eb9bf8c40f785bb6947a1aee66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  drawGizmos: 1
+  detailedGizmos: 0
+  startEndModifier:
+    addPoints: 0
+    exactStartPoint: 3
+    exactEndPoint: 3
+    useRaycasting: 0
+    mask:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    useGraphRaycasting: 0
+  traversableTags: -1
+  tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  graphMask:
+    value: -1
 --- !u!114 &6040839088677582549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,8 +192,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04c8b69c0452371498cf922cb0e6dcdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedMovement: 5
-  seeker: {fileID: 0}
+  speedMovement: 4
+  seeker: {fileID: 8571990344313740640}
 --- !u!114 &7866651094544074102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,6 +209,7 @@ MonoBehaviour:
   characterName: Puni
   messageBubbleOffset: {x: 0, y: 1, z: 0}
   offsetUsesRotation: 0
+  firstDialogue: 
 --- !u!114 &3390779051913580121
 MonoBehaviour:
   m_ObjectHideFlags: 0

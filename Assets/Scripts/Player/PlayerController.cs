@@ -18,7 +18,9 @@ public class PlayerController : MonoBehaviour
     private int currentWaypoint = 0;
 
     private Vector2 targetPosition;
+
     private bool isMoving;
+    private bool isDialogueCompleted;
 
     public Action OnDialogStart;
     public Action OnDialogComplete;
@@ -40,7 +42,7 @@ public class PlayerController : MonoBehaviour
 
     private void HandleInput()
     {
-        if (Input.GetMouseButtonDown(0) && !isMoving)
+        if (Input.GetMouseButtonDown(0) && !isMoving && isDialogueCompleted)
         {
             SetTargetPosition();
             isMoving = true;
@@ -89,11 +91,12 @@ public class PlayerController : MonoBehaviour
     public void HandleDialogComplete()
     {
         speedMovement = currentSpeed;
+        isDialogueCompleted = true;
     }
 
     public void HandleDialogStart()
     {
-        speedMovement = 0;        
+        speedMovement = 0;
     }
 
 }
