@@ -1,0 +1,1460 @@
+fileFormatVersion: 2
+guid: 2677a23ab092ed24a8224e38568861ee
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2430
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eaaae1628ee01a43af4c1061cdbd99c
+      internalID: 1059545153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_1
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 2430
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e780a94d5ca110d4fa98d94e89e9b9b4
+      internalID: -1318400048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_2
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 2430
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a93fabd5dbbc9342a30c0a5a0f2c443
+      internalID: 1205615155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_3
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 2430
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e080f37af15e645459b2daaee3b7a491
+      internalID: 1194962110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_4
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 2430
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 125fedb955ea50c4c8fcdd7771e07c2c
+      internalID: -475516269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_5
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 2430
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e479ef529a2640e4f8b2f3530c7ac917
+      internalID: 659588076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2160
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4324b37d886f9234e8db21898003cef5
+      internalID: -33796862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_7
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 2160
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87241046886df67499166b1f7a346014
+      internalID: 2084858898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_8
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 2160
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db29450fc84792b49893a7080a6830f0
+      internalID: 1086158872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_9
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 2160
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 713216d14739e83439e187eaea195c5b
+      internalID: -805514514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_10
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 2160
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fcc12fc7dd5f964493464ceb5a266f1
+      internalID: -2034984343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_11
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 2160
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3149059d47007c46b26944359722223
+      internalID: -1115003350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1890
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e281f71b54e1bfc4183504b95a1d466a
+      internalID: -1485843493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_13
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 1890
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a079d28d903889b4ca99b06094c156f5
+      internalID: 1692371726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_14
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 1890
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba4ca2e5b2ad8f04087c695da72319bc
+      internalID: 1770297182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_15
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 1890
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eff12bf540266884a8cc15607ad9f0a6
+      internalID: -708132457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_16
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1890
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfeb307d30f29a24b9cb8b51968a3f08
+      internalID: -334116452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_17
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 1890
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9577c54a68a9cea4a958234fb47de362
+      internalID: 977396562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1620
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b66427dfed5e8c4380dbf97db260e86
+      internalID: -2096424216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_19
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 1620
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4bf34adaf394da41b8b89f580b6a186
+      internalID: 1798548236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_20
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 1620
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c5f19c34eb9e5f4c9939694b50d1d20
+      internalID: -1205134457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_21
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 1620
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a40c0fcdd04f20e4180fe080e7c5afa7
+      internalID: -1432837916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_22
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1620
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6515782d1d9cb754891bf5bb504f1683
+      internalID: -12512742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_23
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 1620
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28e8e53739e17754781da8d805330dc0
+      internalID: 846097562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1350
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af36f1f25ef477e41b80cb8ac303910a
+      internalID: 61046446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_25
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 1350
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b9b559ae72b2f640bc487ae0ba5284b
+      internalID: 1057366772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_26
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 1350
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7134ddb6313720d4cb1f67d76973225b
+      internalID: -2115809534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_27
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 1350
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aef67450dfd86d4fa6af4ddd107dc49
+      internalID: -651612853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_28
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1350
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a314e5fe5189c642b40499eee0a1769
+      internalID: 1391933775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_29
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 1350
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec2342e0512db4a40900d9d1bb1055a7
+      internalID: 2111912464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1080
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f065505a52a3b874e858ba831d8e4d1e
+      internalID: -1613323023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_31
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 1080
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12e9d221d3ca10943b472f6110ffd582
+      internalID: 1208298886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_32
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 1080
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2303816831c624249b01845251ef38d9
+      internalID: -1122949415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_33
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 1080
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a768d25d2da185047aa3f87401619fb7
+      internalID: -203597685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_34
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1080
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e63a8a7fe3d23946bffb2f799159884
+      internalID: 310624109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_35
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 1080
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c578c94aca0eb64ba04ab7ec1cdc072
+      internalID: -1319679130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 810
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0839db9a2bba214a8aa26cb16e649e0
+      internalID: -190349755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_37
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 810
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e93b320196879543b7cb648876e4b8d
+      internalID: 1499846755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_38
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 810
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e8769751ce0b9c439c7ff596117c581
+      internalID: 1105014127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_39
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 810
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50a5b9bbd32e0864f81006c23ea5278a
+      internalID: -1397653244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_40
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 810
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f3e2e1293465644282f391ce87f4357
+      internalID: -1190133903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_41
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 810
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2a0bcbdf196be245a38cd4e55ef09f3
+      internalID: -2107872380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 540
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ef26b9b251e4b243b151143aa65ce0c
+      internalID: -654314663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_43
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 540
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2f478c1be137cf4ba6ea7be9e9aa823
+      internalID: -1915951948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_44
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 540
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3e36710b6788054da0790eef6cbfa41
+      internalID: -1292573529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_45
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 540
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2332bf7351a47e142bf9df90350c91f2
+      internalID: 960182910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_46
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 540
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8e371828834ec44f9f5e63c3e12655e
+      internalID: -265523046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_47
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 540
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 787e51b3b4b92c340aae91526442f1bd
+      internalID: 2107172598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 270
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebebf0d18c61c6847afbbbdf16b3a902
+      internalID: 1400490396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_49
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 270
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06d5942b8f87f5c4f88cb902d82945fc
+      internalID: -835177658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_50
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 270
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afb3003bacc19df44ba3c8fdc0d4c7c8
+      internalID: 127758768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_51
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 270
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cb9dbf3e8d22b34a88b98a84a7408ab
+      internalID: 1002770807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_52
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 270
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b906cc8b1be95884a86dc06e6ded1377
+      internalID: -1190350790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_53
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 270
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3d2d97b2a9f25743aace5b372e8f78e
+      internalID: 321214806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc97afc88f35b0d42bef54733776247f
+      internalID: 744497360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_55
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 0
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a4936ece3d87784ca4986bf0d2d1359
+      internalID: -415978633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_56
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 0
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 081a7463e3ed8d74698522c6c85418c7
+      internalID: -644296452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_57
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 0
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aac596ec817f63644a0e7788d3c13896
+      internalID: -1690356765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_58
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 0
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 143b15cca4fd0454086e6d8f7e5c9da4
+      internalID: -2039152776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_IDLE_Spreadsheet_59
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 0
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 726e10d773de08544b71676aa1c49e4b
+      internalID: 1669197906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PP_IDLE_Spreadsheet_0: 1059545153
+      PP_IDLE_Spreadsheet_1: -1318400048
+      PP_IDLE_Spreadsheet_10: -2034984343
+      PP_IDLE_Spreadsheet_11: -1115003350
+      PP_IDLE_Spreadsheet_12: -1485843493
+      PP_IDLE_Spreadsheet_13: 1692371726
+      PP_IDLE_Spreadsheet_14: 1770297182
+      PP_IDLE_Spreadsheet_15: -708132457
+      PP_IDLE_Spreadsheet_16: -334116452
+      PP_IDLE_Spreadsheet_17: 977396562
+      PP_IDLE_Spreadsheet_18: -2096424216
+      PP_IDLE_Spreadsheet_19: 1798548236
+      PP_IDLE_Spreadsheet_2: 1205615155
+      PP_IDLE_Spreadsheet_20: -1205134457
+      PP_IDLE_Spreadsheet_21: -1432837916
+      PP_IDLE_Spreadsheet_22: -12512742
+      PP_IDLE_Spreadsheet_23: 846097562
+      PP_IDLE_Spreadsheet_24: 61046446
+      PP_IDLE_Spreadsheet_25: 1057366772
+      PP_IDLE_Spreadsheet_26: -2115809534
+      PP_IDLE_Spreadsheet_27: -651612853
+      PP_IDLE_Spreadsheet_28: 1391933775
+      PP_IDLE_Spreadsheet_29: 2111912464
+      PP_IDLE_Spreadsheet_3: 1194962110
+      PP_IDLE_Spreadsheet_30: -1613323023
+      PP_IDLE_Spreadsheet_31: 1208298886
+      PP_IDLE_Spreadsheet_32: -1122949415
+      PP_IDLE_Spreadsheet_33: -203597685
+      PP_IDLE_Spreadsheet_34: 310624109
+      PP_IDLE_Spreadsheet_35: -1319679130
+      PP_IDLE_Spreadsheet_36: -190349755
+      PP_IDLE_Spreadsheet_37: 1499846755
+      PP_IDLE_Spreadsheet_38: 1105014127
+      PP_IDLE_Spreadsheet_39: -1397653244
+      PP_IDLE_Spreadsheet_4: -475516269
+      PP_IDLE_Spreadsheet_40: -1190133903
+      PP_IDLE_Spreadsheet_41: -2107872380
+      PP_IDLE_Spreadsheet_42: -654314663
+      PP_IDLE_Spreadsheet_43: -1915951948
+      PP_IDLE_Spreadsheet_44: -1292573529
+      PP_IDLE_Spreadsheet_45: 960182910
+      PP_IDLE_Spreadsheet_46: -265523046
+      PP_IDLE_Spreadsheet_47: 2107172598
+      PP_IDLE_Spreadsheet_48: 1400490396
+      PP_IDLE_Spreadsheet_49: -835177658
+      PP_IDLE_Spreadsheet_5: 659588076
+      PP_IDLE_Spreadsheet_50: 127758768
+      PP_IDLE_Spreadsheet_51: 1002770807
+      PP_IDLE_Spreadsheet_52: -1190350790
+      PP_IDLE_Spreadsheet_53: 321214806
+      PP_IDLE_Spreadsheet_54: 744497360
+      PP_IDLE_Spreadsheet_55: -415978633
+      PP_IDLE_Spreadsheet_56: -644296452
+      PP_IDLE_Spreadsheet_57: -1690356765
+      PP_IDLE_Spreadsheet_58: -2039152776
+      PP_IDLE_Spreadsheet_59: 1669197906
+      PP_IDLE_Spreadsheet_6: -33796862
+      PP_IDLE_Spreadsheet_7: 2084858898
+      PP_IDLE_Spreadsheet_8: 1086158872
+      PP_IDLE_Spreadsheet_9: -805514514
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
