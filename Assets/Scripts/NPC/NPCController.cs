@@ -1,12 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
-using System;
-using Unity.VisualScripting;
-using Cinemachine;
-using Yarn.Unity;
 using Yarn.Unity.Example;
+using DG.Tweening;
 
 public class NPCController : MonoBehaviour
 {
@@ -23,10 +18,15 @@ public class NPCController : MonoBehaviour
 
     [HideInInspector] public bool isReached;
 
+    [Header("Position")]
+    private Vector2 lastPosition;
+
     private void Start()
     {
         characterInteraction = FindObjectOfType<CharacterInteraction>();
         character = GetComponent<YarnCharacter>();
+
+        lastPosition = (Vector2) transform.position;
     }
 
     private void Update()
@@ -47,12 +47,16 @@ public class NPCController : MonoBehaviour
             {
                 HandleDestinationReached();
             }
+            else
+            {
+                transform.DOMove(lastPosition, 2);
+            }
         }
     }
 
     private void HandleDestinationReached()
     {
-        Debug.Log("Se acerca camara y hace alguna funci�n especifica");
+        Debug.Log("Se acerca camara y hace alguna funcion especifica");
         characterInteraction.LaunchDialogue(character.firstDialogue);
     }
 

@@ -104,8 +104,9 @@ MonoBehaviour:
   playerTransform: {fileID: 0}
   detectionDistance: 4
   aiPath: {fileID: 8185077372576699592}
-  dialogueRunner: {fileID: 0}
+  characterInteraction: {fileID: 0}
   isReached: 0
+  lastPosition: {x: 0, y: 0}
 --- !u!114 &5160041706717261501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,6 +122,7 @@ MonoBehaviour:
   characterName: Other
   messageBubbleOffset: {x: 0, y: 1, z: 0}
   offsetUsesRotation: 0
+  firstDialogue: 
 --- !u!114 &8966074008040177771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,7 +188,7 @@ MonoBehaviour:
   rotationSpeed: 360
   slowdownDistance: 1.5
   pickNextWaypointDist: 2
-  endReachedDistance: 1.5
+  endReachedDistance: 2
   alwaysDrawGizmos: 0
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
