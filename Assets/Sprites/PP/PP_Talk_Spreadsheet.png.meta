@@ -1,0 +1,1460 @@
+fileFormatVersion: 2
+guid: b574931ea7c272e498497ebcec05523a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2520
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b60288fd1dd10d40a2811bf07aa7540
+      internalID: 840452938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_1
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 2520
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd074714fb5123f458594ce21243e124
+      internalID: -1194040316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_2
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 2520
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e108ae3084ebd174dadf2f8560e7e710
+      internalID: -677125223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_3
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 2520
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c6ae6587351f5445a081d4b4a417f19
+      internalID: -1921458562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_4
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 2520
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6a8418e6faf79f4f88a323b68cf68d9
+      internalID: -1307082428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_5
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 2520
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a85db9d000109c46afb214351039d67
+      internalID: 1274015579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2240
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a4d851ae2ade3343b59555443511797
+      internalID: 447638243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_7
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 2240
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90c13432044394347b4dc187a913e78e
+      internalID: 2104290260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_8
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 2240
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8627d1184f3ee7448831a1250c8d4c84
+      internalID: 1786504948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_9
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 2240
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72e8d69d5fa08794f9c10b70e661a3f4
+      internalID: 464902267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_10
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 2240
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f620575c069f4043ab6cf297c89029b
+      internalID: 1341897081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_11
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 2240
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d63ee2cf849981f4f886cd0f4f1216be
+      internalID: 452420270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1960
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff6962252ad668643ac2bed1488cb7b4
+      internalID: 67002914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_13
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1960
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9841f234240ef4c488682be13597868f
+      internalID: -1833163724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_14
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1960
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86a351c35b79322468741be12844c8f1
+      internalID: -1090462639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_15
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1960
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07b1ef37822e42949b86cc2b6ba7121c
+      internalID: 2058431547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_16
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 1960
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17aa83a1798a2f74c98789583d57834b
+      internalID: 239849973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_17
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1960
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ed572d66e4f7a047b8c7ae5324a4ec9
+      internalID: 1011079484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1680
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43e9beceb69c9cb44ba572f2a8927a8a
+      internalID: -1069582271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_19
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1680
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aacde582baa9a0645b81fcfcc19e6ff8
+      internalID: 1816116316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_20
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1680
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f4f1d7271921aa4db271e302e6232ea
+      internalID: 2110330865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_21
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1680
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19b35f3814f2c544ab1be8028b08dc66
+      internalID: -1432889882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_22
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 1680
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c6b26363d111cb4eb6a114ac709f8c9
+      internalID: -19422622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_23
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1680
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa2922d1480c5b5438a8844df35fe160
+      internalID: 932689718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1400
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b64d8be9eb245024188713c03e8981e7
+      internalID: -538380401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_25
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1400
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b6b0a462df3ac445b9c48c153573077
+      internalID: 1465915390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_26
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1400
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c52d01524143dc2408f61eff07478d02
+      internalID: -1109632888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_27
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1400
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0db7b3ef86ca9094487323d95158ef03
+      internalID: 1498518649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_28
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 1400
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71f18ddb837eac041bb8b58b314523ac
+      internalID: -10899555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_29
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1400
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25c2507370c26f54aa68fc6f6dfa2d3d
+      internalID: 1474738257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1120
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91a6e04beabfde94daf1185fb764ffb8
+      internalID: -573363423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_31
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1120
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b10001a3a2370234086be6311d3b0018
+      internalID: 995696108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_32
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1120
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d1761d90d0062b4e944ee9fa6a443d2
+      internalID: 1823528093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_33
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1120
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0508607f731df044b948ffb87e0ed3d
+      internalID: -195894033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_34
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 1120
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a28eeaeae24f2214b99528a4fb4235b7
+      internalID: -2112311196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_35
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1120
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8308d7c9b8010d4c87322b47abaa97c
+      internalID: -1900398352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 840
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9a1bb8d30e49e44c8671871996569ac
+      internalID: -1033712065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_37
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 840
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c64f998124f02954791d3d0bab492c20
+      internalID: -1666086969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_38
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 840
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69afc89659bad0a49ba7ce0187b96efd
+      internalID: -1967168186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_39
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 840
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cbbbe2d42d54a243931ed48ed2a09d8
+      internalID: 1129776680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_40
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 840
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a33a721d69a3c844bc593abbb43ecbe
+      internalID: -1698053735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_41
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 840
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e0ea275aa1f59f4aac0e7133f80ca3e
+      internalID: -196138508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 560
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3421732b1323ba41af346c1b66a2d1d
+      internalID: -1691574530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_43
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 560
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c18da6a38905f654695f8af09101a58d
+      internalID: 2123127635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_44
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 560
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ce3dc9c0d1a5724c8c2f95f1187bf45
+      internalID: -220386455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_45
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 560
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb36af9fe7d5a0d429b735a65ca43a52
+      internalID: -337854982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_46
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 560
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcd458bb8a352764789a751019e5efe0
+      internalID: 1868354973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_47
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 560
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fde3f4f91a102b44b89f1259d789da5
+      internalID: 2027376769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 280
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7f58e7007f17a445ab6f881fe20e3ff
+      internalID: -1177664651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_49
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 280
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b04fac7219a43c44e99cb31ed4187486
+      internalID: 1516952053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_50
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 280
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86d2a9079d576b444b1e00ae9a2f2e00
+      internalID: 612925052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_51
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 280
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 556e150ddeb407841862cd730436226b
+      internalID: 2064092393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_52
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 280
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e313bbe75a89634fa2d178c50f817a3
+      internalID: 367114029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_53
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 280
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aed8f8f9dbf1d1c4dbee74af041908ed
+      internalID: -91345066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b8d7802afa87fe4084e6b1bab239f62
+      internalID: 1982291616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_55
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 0
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4cbfcab1992b304686f9de7c34da7ba
+      internalID: -848504000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_56
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 0
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41b6a97b81ecadb4f8f31c74d9001445
+      internalID: -1228594022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_57
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 0
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df2603cf0f6d53347a54a4189f27c272
+      internalID: -155900429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_58
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 0
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01bad3a08cf440a4da9b029fb0f9b3f7
+      internalID: 1071125530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PP_Talk_Spreadsheet_59
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 0
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7937ee7b3b9d6d4dae3dea8111adc71
+      internalID: 1994343785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PP_Talk_Spreadsheet_0: 840452938
+      PP_Talk_Spreadsheet_1: -1194040316
+      PP_Talk_Spreadsheet_10: 1341897081
+      PP_Talk_Spreadsheet_11: 452420270
+      PP_Talk_Spreadsheet_12: 67002914
+      PP_Talk_Spreadsheet_13: -1833163724
+      PP_Talk_Spreadsheet_14: -1090462639
+      PP_Talk_Spreadsheet_15: 2058431547
+      PP_Talk_Spreadsheet_16: 239849973
+      PP_Talk_Spreadsheet_17: 1011079484
+      PP_Talk_Spreadsheet_18: -1069582271
+      PP_Talk_Spreadsheet_19: 1816116316
+      PP_Talk_Spreadsheet_2: -677125223
+      PP_Talk_Spreadsheet_20: 2110330865
+      PP_Talk_Spreadsheet_21: -1432889882
+      PP_Talk_Spreadsheet_22: -19422622
+      PP_Talk_Spreadsheet_23: 932689718
+      PP_Talk_Spreadsheet_24: -538380401
+      PP_Talk_Spreadsheet_25: 1465915390
+      PP_Talk_Spreadsheet_26: -1109632888
+      PP_Talk_Spreadsheet_27: 1498518649
+      PP_Talk_Spreadsheet_28: -10899555
+      PP_Talk_Spreadsheet_29: 1474738257
+      PP_Talk_Spreadsheet_3: -1921458562
+      PP_Talk_Spreadsheet_30: -573363423
+      PP_Talk_Spreadsheet_31: 995696108
+      PP_Talk_Spreadsheet_32: 1823528093
+      PP_Talk_Spreadsheet_33: -195894033
+      PP_Talk_Spreadsheet_34: -2112311196
+      PP_Talk_Spreadsheet_35: -1900398352
+      PP_Talk_Spreadsheet_36: -1033712065
+      PP_Talk_Spreadsheet_37: -1666086969
+      PP_Talk_Spreadsheet_38: -1967168186
+      PP_Talk_Spreadsheet_39: 1129776680
+      PP_Talk_Spreadsheet_4: -1307082428
+      PP_Talk_Spreadsheet_40: -1698053735
+      PP_Talk_Spreadsheet_41: -196138508
+      PP_Talk_Spreadsheet_42: -1691574530
+      PP_Talk_Spreadsheet_43: 2123127635
+      PP_Talk_Spreadsheet_44: -220386455
+      PP_Talk_Spreadsheet_45: -337854982
+      PP_Talk_Spreadsheet_46: 1868354973
+      PP_Talk_Spreadsheet_47: 2027376769
+      PP_Talk_Spreadsheet_48: -1177664651
+      PP_Talk_Spreadsheet_49: 1516952053
+      PP_Talk_Spreadsheet_5: 1274015579
+      PP_Talk_Spreadsheet_50: 612925052
+      PP_Talk_Spreadsheet_51: 2064092393
+      PP_Talk_Spreadsheet_52: 367114029
+      PP_Talk_Spreadsheet_53: -91345066
+      PP_Talk_Spreadsheet_54: 1982291616
+      PP_Talk_Spreadsheet_55: -848504000
+      PP_Talk_Spreadsheet_56: -1228594022
+      PP_Talk_Spreadsheet_57: -155900429
+      PP_Talk_Spreadsheet_58: 1071125530
+      PP_Talk_Spreadsheet_59: 1994343785
+      PP_Talk_Spreadsheet_6: 447638243
+      PP_Talk_Spreadsheet_7: 2104290260
+      PP_Talk_Spreadsheet_8: 1786504948
+      PP_Talk_Spreadsheet_9: 464902267
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
