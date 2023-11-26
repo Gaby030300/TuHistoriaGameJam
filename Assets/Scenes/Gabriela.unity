@@ -212,22 +212,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8185077372576699592, guid: de32c8f6a3e128c44be9ba2a9763eab0, type: 3}
-      propertyPath: radius
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8185077372576699592, guid: de32c8f6a3e128c44be9ba2a9763eab0, type: 3}
-      propertyPath: slowdownDistance
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8185077372576699592, guid: de32c8f6a3e128c44be9ba2a9763eab0, type: 3}
-      propertyPath: endReachedDistance
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 9001418706877629452, guid: de32c8f6a3e128c44be9ba2a9763eab0, type: 3}
       propertyPath: playerTransform
       value: 
       objectReference: {fileID: 1717148584}
+    - target: {fileID: 9001418706877629452, guid: de32c8f6a3e128c44be9ba2a9763eab0, type: 3}
+      propertyPath: detectionDistance
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
