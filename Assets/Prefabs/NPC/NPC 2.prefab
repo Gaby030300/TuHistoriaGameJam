@@ -106,6 +106,7 @@ MonoBehaviour:
   detectionDistance: 5
   aiPath: {fileID: 8185077372576699592}
   characterInteraction: {fileID: 0}
+  animator: {fileID: 2451827304974392502}
   isReached: 0
 --- !u!114 &5160041706717261501
 MonoBehaviour:
