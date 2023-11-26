@@ -1,0 +1,90 @@
+﻿title: Tim
+tags: 
+
+---
+<<set $affinityTim = 0>>
+Red: Um, hi there. I'm Red. I...[pause=1000] um, [/pause] really like games.
+Red: Sorry I interrupted you!
+<<set $social_battery -=15>>
+<<popup>>
+Tim: Oh, hey. It's ok
+Tim: Nice to meet you. I'm Tim
+Tim: What brings you here?
+  -> Uh, sorry
+    Red: I'm not sure why I'm here. Games, I guess...
+    <<set $social_battery -= 15>>
+    <<popup>>
+    <<set $affinityTim -= 10>>
+  -> Games, definitely! 
+    Red: Nothing more but Games, definitely!
+    Red: I'm into that!.
+    <<set $affinityTim += 10>>
+Tim: So, what aspect of gaming interests you?
+  -> Game design
+    Red: Game design and storytelling.
+    Red: They're so intricate and fascinating.
+    <<set $social_battery += 10>>
+    <<popup>>
+  -> Um, everything,
+    Red: I [pause=500]... [/pause]guess, everything?.
+    <<set $social_battery -= 15>>
+    <<popup>>
+
+Tim: Yeah, it's a competitive field. Are you ready for that challenge?
+  -> Absolutely!
+    Red: I'm determined to make my mark.    
+    <<set $affinityTim += 10>>
+  -> I'm not entirely sure
+    Red: I'm not entirely sure
+    Red: But I'm trying.
+    <<set $affinityTim -= 10>>
+
+Red: Hehe...
+Tim: Any recent gaming projects you admire?
+  -> Oh, definitely! 
+    Red: There's this indie game that's been incredible.
+    -> Goat Game
+      Red: It's about a goat coming back to her town
+      Tim: Really? I've seen it too
+      Tim: Unfortunately I couldn't play it
+      Red: You should!
+      Tim: I'll take your word Red
+      <<set $affinityTim += 20>>
+    -> Farming Game
+      Red: It's about a farmer
+      Tim: He just have to interact with people
+      Tim: I know what you mean!
+      Tim: I'm more a Roguelike guy
+      Red: You definitely look like one
+  -> I guess
+    Red: I've seen a few... They're okay.
+    Tim: Ohhh... any recommendation?
+    -> All of them
+      Red: Ahm... Honestly
+      Red: I can't decide
+      Red: They're so good
+      Tim: Ohhh I know what you mean
+      Tim: I hope I can play more soon
+    -> Not Really
+      Red: Ahm... not really
+      Tim: Uh, ok[pause=500]...[/pause] no problem
+      <<set $affinityTim -= 10>>
+      <<set $social_battery -=15>>
+      <<popup>>
+Tim: Anyway
+<<if $affinityTim >= 30>>
+    Tim: Wanna discuss more gaming stuff later?
+    Red: Absolutely! There's this fascinating concept I've been exploring...
+    Tim: This is my card
+    Tim: I need to leave soon but stay in touch!    
+    <<set $affinityTim += 10>>
+    Red: I'll do! Thanks!    
+<<else>>
+    Tim: I need to go, see you around?
+    Red: Sure...
+    Red: I'm not built for social interactions
+    <<set $social_battery -=5>>
+    <<popup>>
+<<endif>>
+<<affinity "Tim" {$affinityTim}>>
+===

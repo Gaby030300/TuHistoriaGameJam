@@ -1,0 +1,13 @@
+﻿title: PJEntry
+tags:
+---
+<<set $social_battery = 100>>
+Red: Well... I'm here
+Red: You can do it[pause=200].[/pause][pause=200].[/pause][pause=200].[/pause]
+Red: You depend on this.
+Red: You got it
+<<set $social_battery -= 5>>
+<<popup>>
+Red: Phew[pause=200].[/pause][pause=200].[/pause][pause=200].[/pause] I got nervous instead.
+
+===
