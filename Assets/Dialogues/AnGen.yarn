@@ -1,0 +1,89 @@
+﻿title: Shoecamp
+tags: 
+
+---
+<<set $social_battery = 100>>
+<<set $affinityAngen = 0>>
+
+Puni: Hi there, I'm Puni.
+Puni: Sorry for interrupting, I'm quite passionate about games
+Angen: *Sigh* Another one here.
+Angen: For a fruitless chat about games, I suppose. 
+Puni: [pause=200].[/pause][pause=200].[/pause][pause=200].[/pause]
+Angen: Whatever, I'm <color=red>Angen</color>.
+Ange: I run a shoe camp, if that even matters.
+<<set $social_battery -= 20>>
+<<popup>>
+
+-> What's a "shoe camp"?
+    Puni: Shoe camp?
+    Puni: I've never heard of it before.
+    Angen: A bootcamp for the soul-sucking development world.
+    Angen: Would you believe the big U pay for it?
+    Angen: I mean... they sent scholarships to students experience the pain
+    Angen: It's a three-month nightmare where I take credit for doing *nothing*.
+-> Just sharing info
+    Puni: Just sharing my project's progress.
+    <<set $affinityAngen -= 5>>
+
+
+Angen: Ever thought of joining the shoe camp? 
+Puni: Maybe...
+-> Do you recommend it?
+    Puni: Would you ever recommend someone to join your "shoe camp"?
+    Angen: What do you think?
+    Angen: It is the best curriculum out there.
+    Angen: I made it myself!
+    <<set $affinityAngen += 10>>
+-> Should I?
+    Puni: Should I join?
+    Angen: What do you think?
+    Puni: But, I don't think I have three months free
+    Puni: I really need a job
+    Angen: That doesn't matter! you can work, study, being a parent
+    Angen: And still join the shoe camp!
+
+Angen: If you don't join us you'll be nothing and nobody in life
+<<set $social_battery -= 5>>
+<<popup>>
+Angen: The social department of the big U pays us to screw [pause=200].[/pause][pause=200].[/pause][pause=200].[/pause]
+Angen: Teach students for 3 months
+
+Angen: But listen, I'm in dire need of someone to teach game dev basics.
+Angen: If you're here, you must know a thing or two
+Angen: Have any game dev skills?
+-> Some
+    Puni: Yes[pause=200].[/pause][pause=200].[/pause][pause=200].[/pause]
+    Puni: I have some skills in game development.
+    Angen: Perfect! We need an instructor desperately.
+    Angen: You seem like a fine candidate since you understand the stuff.
+    <<set $affinityAngen += 20>>
+-> Not yet
+    Puni: I'm just starting out.
+    Angen: Ah, too bad. We're in need of an instructor urgently.
+    Puni: Sorry, about that
+    Puni: I'm here to learn more
+    Angen: Hmmmm, I think, it doesn't matter
+Angen: You'd do fine, considering I created the curriculum.
+Angen: Everybody can teach it... and I mean it
+Angen: [pause=200]A[/pause][pause=200]N[/pause][pause=200]Y[/pause]body
+Angen: So? What do you think?
+    -> Yes
+        Puni: Ok, I can give it a try.
+        Angen: Perfect! I'll sent you the details.
+        Angen: Give me your number.
+        Angen: I'll call you sunday midnight.
+        <<set $affinityAngen += 100>>
+    -> No
+        Puni: Sorry, I'm not that prepared
+        Puni: It is a great responsability
+        Puni: And the people deserve someone who improve their lifes
+        Angen: Whatever, I'll find another one
+        Angen: You won't be a coach in life for no-one at the end
+        <<set $affinityAngen -= 20>>
+
+Angen: I have a call, see ya.
+<<set $social_battery -= 25>>
+Puni: OK?
+<<affinity "Angen" {$affinityAngen}>>
+=== 
