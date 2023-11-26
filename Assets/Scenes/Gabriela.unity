@@ -174,11 +174,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6397469875653661706, guid: de32c8f6a3e128c44be9ba2a9763eab0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.71
+      value: 11.31
       objectReference: {fileID: 0}
     - target: {fileID: 6397469875653661706, guid: de32c8f6a3e128c44be9ba2a9763eab0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.27
+      value: -3.06
       objectReference: {fileID: 0}
     - target: {fileID: 6397469875653661706, guid: de32c8f6a3e128c44be9ba2a9763eab0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -211,6 +211,18 @@ PrefabInstance:
     - target: {fileID: 6397469875653661706, guid: de32c8f6a3e128c44be9ba2a9763eab0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185077372576699592, guid: de32c8f6a3e128c44be9ba2a9763eab0, type: 3}
+      propertyPath: radius
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185077372576699592, guid: de32c8f6a3e128c44be9ba2a9763eab0, type: 3}
+      propertyPath: slowdownDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185077372576699592, guid: de32c8f6a3e128c44be9ba2a9763eab0, type: 3}
+      propertyPath: endReachedDistance
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 9001418706877629452, guid: de32c8f6a3e128c44be9ba2a9763eab0, type: 3}
       propertyPath: playerTransform
@@ -362,7 +374,7 @@ MonoBehaviour:
   m_YDamping: 0
   m_ZDamping: 0
   m_TargetMovementOnly: 1
-  m_ScreenX: 0.5
+  m_ScreenX: 0.07
   m_ScreenY: 0.5
   m_CameraDistance: 10
   m_DeadZoneWidth: 0
@@ -412,7 +424,7 @@ Transform:
   m_GameObject: {fileID: 820494031}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.98, y: 0, z: -10}
+  m_LocalPosition: {x: -0.24222279, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -441,7 +453,7 @@ MonoBehaviour:
   m_Follow: {fileID: 1717148584}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 5
+    OrthographicSize: 6.5
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -536,7 +548,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 2
+  orthographic size: 4
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -561,7 +573,7 @@ Transform:
   m_GameObject: {fileID: 855270485}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.305761, y: 0.0007300002, z: -10}
+  m_LocalPosition: {x: -5.3444448, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -817,8 +829,8 @@ Transform:
   m_GameObject: {fileID: 1220124021}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.0037739, z: 0}
-  m_LocalScale: {x: 19.125, y: 11.25, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 30, y: 15, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 910400452}
@@ -922,7 +934,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAACYn+tNQdZgZgIAABwFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVE1z2jAQ/SuMziVjAwmkt9YQ0kMSJqSTiy/CWmMNsuTRR4Bk+O9dyTZ23BPivX27b1crfxEuTQWZVXqtOXtSDMjPEfFn8mPUkY9wonslt/wT2ph3zmzhg2iIeaWWK8RjLzOqBKt59kvuhQ+OEHSS50qXK7aHRBlrEM6pMICUVtarJUJfI3LCn/G9l5zxNJn70yee7qPRBY8ZSAu6H3pzO72bz6arcTRvRK2kVjiZCVpWwLz9Thgvmui4DpPYWBPhm8iUENw0rog9V6HrhFbGYU8YwDjFLoMVH18A3xfWO+6LX/LcgG0saXpeco3DqrOS36qeYEnNofb1QYXzdRbBUZ3y6T92HAc616p8bKvGka9gC54dXuk5o8b2BtyHl99tO3mk4kB3At4LkM9qrZWTDEmrnZc6A5Nl9/faWFJAdujw2uoAdFU37WhwNb6HS+j9lAhe7jx1M6uBrVBh2mEJQOO9/EHDYUVMkwJR7+KvgTe67+9SQzxwbSxSTZfS29spp30oWYWZ+W6cTZSWEODGdAWSCnveYBo7vMAB1ys7YB6ofzVN8YZrH8NAEuAuPooG1EYdr5dlCnV8AlO8OCu4hM60J55xTomSst6v/kxa2dbpnGY92d5x9n21yO18N5nS6WQ2i+NsQRfj3fx+kuez3V0Us0UcLUjYPS6xTyo2tdFmPHhrsksucc/aj8lorWkVdp1pelzzz1L1Rs5lrraZBpAvdYarcdBYBN8kWzGOA9qCtVyG+yZfKREqOwBLr4nS0OnqZDVNuywpqfiHsh5JSRK+Hinx8HWXNxo+OBx98TbZhVz+AVBLAwQUAAAICAAAmJ/rNQ3/C20AAAB4AAAACQAkAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAatWKkstKs7Mz1OyUjDRM9IzNNdRUEovSizIKAaKGII4pZkpIHa0kql5kpFxorGRiYmhYbJFooVukrmlUVqaSZKZgWGKhaGBhVIsUH1JZUGqX2JuKkRPQGJJRlpmXkpmXrqee1FmijvIaKXYWgBQSwECLQAUAAAICAAAmJ/rTUHWYGYCAAAcBQAACwAkAAAAAAAAAAAAAAAAAAAAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwECLQAUAAAICAAAmJ/rNQ3/C20AAAB4AAAACQAkAAAAAAAAAAAAAACzAgAAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsFBgAAAAACAAIAuAAAAGsDAAAAAA==
+    dataString: UEsDBBQAAAgIAACYn+t5MWEZWgIAABAFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VE1z2jAQ/SuMzk3HJrRAb60hpAcSJqSTiy/CWmMNsuTRBx/J8N+7km3suNMT4r23u29XK38QLk0FmVV6pTlbKwbkx4j4M/ky6shHONO9klv+Dq3mjTNbeBENmhdquUI89mFGlWA1z37KvfDiCEEnea50uWR7SJSxBuGcCgNIaWV9tEToY0TO+HM39yEXPI2n/vSOp3k0uuIxA2lBd9JW2MpqlZOZoGUFzFvuxON5o44nQSaxmUbhjWdKCG4aJ8ReqtBpQivjsA8UME6xs1De6wvg+8L6vP3g5zw3YBtLml4WXOOA6qzkl6qnVlJzqH0dqXC+ziw4qlOu/2Hv4kDnWpWPbdU48hVswbPDC71k1NjeUPvw4rNtJ09UHOhOwFsB8kmttHKSIWm186HOwHjR/b01lhSQHTq8tjoAXfX/q/E9XEPv50Twcuepr5Ma2AoVph0uHjTey280HNbCNCkQ9S7+GHil+/7+NMQD18Yi1XQpvb2dctpLyTLMzHfjbKK0hAA3piuQVNjLBtPY4QUOuF7ZAfNA/Utpijdc+wAGIQHu9FE0oDbqdLssU6jTGkzx7KzgEjrTnnjCOSVKynq/+jNpw7ZO5zTrhe0dZ59Xi3yb7sb39H48mcRxNqOzu910Ps7zye57FLNZHM1I2D0usU8qNrXRZjx4a7JLLnHP2g/IaKVpFXadaXpa8fdS9UbOZa62mQaQz3WGm3HQWATfJFsyjgPagrVchvsmHykRKjsAS2+J0tDp8mw1TbssKan4UVmPpCQJX4yUePi2yxsNRw4nX7xNdiXXv1BLAwQUAAAICAAAmJ/rNQ3/C20AAAB4AAAACQAkAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAatWKkstKs7Mz1OyUjDRM9IzNNdRUEovSizIKAaKGII4pZkpIHa0kql5kpFxorGRiYmhYbJFooVukrmlUVqaSZKZgWGKhaGBhVIsUH1JZUGqX2JuKkRPQGJJRlpmXkpmXrqee1FmijvIaKXYWgBQSwECLQAUAAAICAAAmJ/reTFhGVoCAAAQBQAACwAkAAAAAAAAAAAAAAAAAAAAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwECLQAUAAAICAAAmJ/rNQ3/C20AAAB4AAAACQAkAAAAAAAAAAAAAACnAgAAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsFBgAAAAACAAIAuAAAAF8DAAAAAA==
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
@@ -1022,7 +1034,7 @@ Transform:
   m_GameObject: {fileID: 1604314462}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.98, y: 0, z: -10}
+  m_LocalPosition: {x: -5.3444448, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1066,7 +1078,7 @@ MonoBehaviour:
   m_Follow: {fileID: 1717148584}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 2
+    OrthographicSize: 4
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -1333,7 +1345,7 @@ MonoBehaviour:
   m_YDamping: 0
   m_ZDamping: 0
   m_TargetMovementOnly: 1
-  m_ScreenX: 0.5
+  m_ScreenX: 0.16
   m_ScreenY: 0.5
   m_CameraDistance: 10
   m_DeadZoneWidth: 0
@@ -1481,6 +1493,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 2328153498296770131, guid: 7413a057d49de844f939bd9fad1a77bb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4565959417066015132, guid: 7413a057d49de844f939bd9fad1a77bb, type: 3}
       propertyPath: playerTransform
       value: 
@@ -1495,7 +1511,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8297829735360874985, guid: 7413a057d49de844f939bd9fad1a77bb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.34
+      value: 5.76
       objectReference: {fileID: 0}
     - target: {fileID: 8297829735360874985, guid: 7413a057d49de844f939bd9fad1a77bb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1544,7 +1560,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5735501195125484945, guid: b6a7ca85becb8a9459b6055225ee1ce2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.98
+      value: -10.18
       objectReference: {fileID: 0}
     - target: {fileID: 5735501195125484945, guid: b6a7ca85becb8a9459b6055225ee1ce2, type: 3}
       propertyPath: m_LocalPosition.y
