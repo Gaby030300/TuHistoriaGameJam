@@ -9,5 +9,16 @@ Red: You got it
 <<set $social_battery -= 5>>
 <<popup>>
 Red: Phew[pause=200].[/pause][pause=200].[/pause][pause=200].[/pause] I got nervous instead.
+Red: Are we ready?
+    -> Yes
+        Red: I am! I am, let's go!
+        <<set $social_battery -= 5>>
+        <<popup>>
+    -> No
+        Red: I[pause=200].[/pause][pause=200].[/pause][pause=200].[/pause] Am not.
+        Red: But I'm here, and my mom won't show for another 2 hours
+        <<set $social_battery -= 5>>
+        <<popup>>
+        Red: Here I go
 
 ===
