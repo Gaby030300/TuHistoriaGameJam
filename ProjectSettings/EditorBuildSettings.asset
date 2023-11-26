@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Intro.unity
     guid: 756ec7025ec4dd548abf78a6ad023a54
   - enabled: 1
-    path: Assets/Resources/Scenes/Gabriela.unity
-    guid: 97a61742c70d24c49bfd66456bc52906
+    path: Assets/Scenes/Gabriela.unity
+    guid: a435b7c4a861b7a4ead0a389460b38cf
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 0e8dc6e910c78694890da9e2512df0ec, type: 2}
