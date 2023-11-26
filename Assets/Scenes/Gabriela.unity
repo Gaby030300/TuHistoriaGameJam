@@ -1917,18 +1917,6 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2169478810349671222, guid: 31bf2f0369fcc0645838eb20325f2352, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2169478810349671222, guid: 31bf2f0369fcc0645838eb20325f2352, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2169478810349671222, guid: 31bf2f0369fcc0645838eb20325f2352, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3032167894837002182, guid: 31bf2f0369fcc0645838eb20325f2352, type: 3}
       propertyPath: popup
       value: 
@@ -1973,6 +1961,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4069815013415415018, guid: 31bf2f0369fcc0645838eb20325f2352, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4069815013415415018, guid: 31bf2f0369fcc0645838eb20325f2352, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4069815013415415018, guid: 31bf2f0369fcc0645838eb20325f2352, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4069815013415415018, guid: 31bf2f0369fcc0645838eb20325f2352, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4069815013415415018, guid: 31bf2f0369fcc0645838eb20325f2352, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4069815013415415018, guid: 31bf2f0369fcc0645838eb20325f2352, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4069815014233373419, guid: 31bf2f0369fcc0645838eb20325f2352, type: 3}
       propertyPath: onDialogueStart.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1997,6 +2009,14 @@ PrefabInstance:
       propertyPath: firstCamera
       value: 
       objectReference: {fileID: 820494033}
+    - target: {fileID: 8778312082541649501, guid: 31bf2f0369fcc0645838eb20325f2352, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 4507118784796185266, guid: 58c94eb2221dcfc4c85942952c3740d5, type: 2}
+    - target: {fileID: 8778312082541649501, guid: 31bf2f0369fcc0645838eb20325f2352, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
