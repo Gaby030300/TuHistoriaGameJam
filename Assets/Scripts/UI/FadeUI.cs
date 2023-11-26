@@ -7,15 +7,24 @@ public class FadeUI : MonoBehaviour
 {
     [SerializeField] private Image fader;
     [SerializeField] private float time;
+    [SerializeField] private bool isChanging;
+    [SerializeField] private bool isFadingOut;
     private void Start()
     {
-        fader.DOFade(0, time).OnComplete(() => 
-            fader.DOFade(1,time+1).OnComplete(ChangeScene)
+        fader.DOFade(0, time).OnComplete(() =>
+            {
+                if (isFadingOut)
+                {
+                    fader.DOFade(1, time + 1).OnComplete(() =>
+                        {
+                            if (isChanging)
+                            {
+                                SceneController.Instance.GoToNextScene();
+                            }
+                        }
+                    );
+                }
+            }
             );
-    }
-
-    void ChangeScene()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

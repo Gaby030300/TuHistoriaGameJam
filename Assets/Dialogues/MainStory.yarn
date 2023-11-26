@@ -1,91 +1,12 @@
 ﻿title: Start
-tags: 
-
+tag:
 ---
-<<set $social_battery = 100>>
-<<set $affinityOther = 0>>
-Puni: Um, hi there. I'm Puni. I...[pause=1000] um, [/pause] really like games.
-Puni: Sorry I interrupted you!
-<<set $social_battery -=15>>
-<<popup>>
-Other: Oh, hey. It's ok
-Other: Nice to meet you. I'm Other
-Other: What brings you here?
-  -> Uh, sorry
-    Puni: I'm not sure why I'm here. Games, I guess...
-    <<set $social_battery -= 15>>
-    <<popup>>
-    <<set $affinityOther -= 10>>
-  -> Games, definitely! 
-    Puni: Nothing more but Games, definitely!
-    Puni: I'm into that!.
-    <<set $affinityOther += 10>>
-Other: So, what aspect of gaming interests you?
-  -> Game design
-    Puni: Game design and storytelling.
-    Puni: They're so intricate and fascinating.
-    <<set $social_battery += 10>>
-    <<popup>>
-  -> Um, everything,
-    Puni: I [pause=500]... [/pause]guess, everything?.
-    <<set $social_battery -= 15>>
-    <<popup>>
-
-Other: Yeah, it's a competitive field. Are you ready for that challenge?
-  -> Absolutely!
-    Puni: I'm determined to make my mark.    
-    <<set $affinityOther += 10>>
-  -> I'm not entirely sure
-    Puni: I'm not entirely sure
-    Puni: But I'm trying.
-    <<set $affinityOther -= 10>>
-
-Puni: Hehe...
-Other: Any recent gaming projects you admire?
-  -> Oh, definitely! 
-    Puni: There's this indie game that's been incredible.
-    -> Goat Game
-      Puni: It's about a goat coming back to her town
-      Other: Really? I've seen it too
-      Other: Unfortunately I couldn't play it
-      Puni: You should!
-      Other: I'll take your word Puni
-      <<set $affinityOther += 20>>
-    -> Farming Game
-      Puni: It's about a farmer
-      Other: He just have to interact with people
-      Other: I know what you mean!
-      Other: I'm more a Roguelike guy
-      Puni: You definitely look like one
-  -> I guess
-    Puni: I've seen a few... They're okay.
-    Other: Ohhh... any recommendation?
-    -> All of them
-      Puni: Ahm... Honestly
-      Puni: I can't decide
-      Puni: They're so good
-      Other: Ohhh I know what you mean
-      Other: I hope I can play more soon
-    -> Not Really
-      Puni: Ahm... not really
-      Other: Uh, ok[pause=500]...[/pause] no problem
-      <<set $affinityOther -= 10>>
-      <<set $social_battery -=15>>
-      <<popup>>
-Other: Anyway
-<<if $affinityOther >= 30>>
-    Other: Wanna discuss more gaming stuff later?
-    Puni: Absolutely! There's this fascinating concept I've been exploring...
-    Other: This is my card
-    Other: I need to leave soon but stay in touch!    
-    <<set $affinityOther += 10>>
-    Puni: I'll do! Thanks!    
-<<else>>
-    Other: I need to go, see you around?
-    Puni: Sure...
-    Puni: I'm not built for social interactions
-    <<set $social_battery -=5>>
-    <<popup>>
-<<endif>>
-<<affinity "Other" {$affinityOther}>>
+Puni: Welcome!
+Puni: I'm really happy you're playing our game
+Mapz: This is our story
+Mapz: Some of our experiences in the industry as introverts
+Gaby: Probably it is yours too
+Gaby: And we hope this game give you some ideas to explore in your next Networking party
+Team: When you're ready we'll open the doors
+<<sceneChange>>
 ===
