@@ -16,7 +16,12 @@ public class NPCController : MonoBehaviour
     private CharacterInteraction characterInteraction;
     private YarnCharacter character;
 
+    [Header("Animator")]
+    [SerializeField] private Animator animator;
+
     [HideInInspector] public bool isReached;
+
+    private bool isTalking;
 
     [Header("Position")]
     private Vector2 lastPosition;
@@ -50,6 +55,7 @@ public class NPCController : MonoBehaviour
             else
             {
                 transform.DOMove(lastPosition, 2);
+                isTalking = false;
             }
         }
     }
@@ -58,6 +64,8 @@ public class NPCController : MonoBehaviour
     {
         Debug.Log("Se acerca camara y hace alguna funcion especifica");
         characterInteraction.LaunchDialogue(character.firstDialogue);
+        isTalking = true;
+        animator.SetBool("isTalking", isTalking);
     }
 
     private void DistanceToFollowPlayer()
@@ -71,6 +79,8 @@ public class NPCController : MonoBehaviour
         else
         {
             aiPath.enabled = false;
+            isTalking = false;
+            animator.SetBool("isTalking", isTalking);
         }
     }
 }
