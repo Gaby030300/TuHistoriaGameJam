@@ -214,6 +214,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8384670313446597980, guid: de32c8f6a3e128c44be9ba2a9763eab0, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9001418706877629452, guid: de32c8f6a3e128c44be9ba2a9763eab0, type: 3}
       propertyPath: playerTransform
       value: 
@@ -538,7 +542,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.5
+  orthographic size: 4
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -563,7 +567,7 @@ Transform:
   m_GameObject: {fileID: 855270485}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.56366277, y: 0.0036199999, z: -10}
+  m_LocalPosition: {x: -5.0080895, y: 0.00045, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1426,6 +1430,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1717148584}
+    - target: {fileID: 6703048061996844520, guid: 598b335ba921a8d46bf23f04b4a59416, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8773579574455978475, guid: 598b335ba921a8d46bf23f04b4a59416, type: 3}
       propertyPath: m_Name
       value: NPC 4
@@ -1556,6 +1564,10 @@ PrefabInstance:
     - target: {fileID: 480672720173880351, guid: f38fc7804ee01f44897b769b475e13c9, type: 3}
       propertyPath: m_Name
       value: NPC 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2609671695338917281, guid: f38fc7804ee01f44897b769b475e13c9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5283471027241596358, guid: f38fc7804ee01f44897b769b475e13c9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1735,6 +1747,10 @@ PrefabInstance:
     - target: {fileID: 7030987027234365309, guid: b6a7ca85becb8a9459b6055225ee1ce2, type: 3}
       propertyPath: m_FlipY
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7030987027234365309, guid: b6a7ca85becb8a9459b6055225ee1ce2, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8208959067134419317, guid: b6a7ca85becb8a9459b6055225ee1ce2, type: 3}
       propertyPath: m_Name
