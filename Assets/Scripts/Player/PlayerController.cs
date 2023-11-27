@@ -3,6 +3,7 @@ using System;
 using UnityEngine;
 using Yarn;
 using Yarn.Unity;
+using DG.Tweening;
 using static Yarn.Unity.DialogueRunner;
 
 public class PlayerController : MonoBehaviour
@@ -51,9 +52,6 @@ public class PlayerController : MonoBehaviour
         HandleInput();
         MoveTowardsTarget();
 
-        OnDialogStart += HandleDialogStart;
-        OnDialogComplete += HandleDialogComplete;
-
         dialogueRunner.onNodeStart = onNodeStart;
         dialogueRunner.onNodeComplete = onNodeComplete;
     }
@@ -63,7 +61,6 @@ public class PlayerController : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && !isMoving && isDialogueCompleted)
         {
             SetTargetPosition();
-            isMoving = true;            
             FindPath();
         }
     }
@@ -114,10 +111,14 @@ public class PlayerController : MonoBehaviour
     }
 
     public void HandleDialogComplete()
-    {
+    {   
         speedMovement = currentSpeed;
         isDialogueCompleted = true;
         animator.SetBool("isTalking", isDialogueCompleted);
+
+        isMoving = false;
+        animator.SetBool("isWalking", isMoving);
+
     }
 
     public void HandleDialogStart()

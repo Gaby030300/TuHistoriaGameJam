@@ -63,7 +63,6 @@ public class NPCController : MonoBehaviour
 
     private void HandleDestinationReached()
     {
-        Debug.Log("Se acerca camara y hace alguna funcion especifica");
         characterInteraction.LaunchDialogue(character.firstDialogue);
         isTalking = true;
         animator.SetBool("isTalking", isTalking);        
