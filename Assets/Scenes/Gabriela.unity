@@ -214,12 +214,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8185077372576699592, guid: de32c8f6a3e128c44be9ba2a9763eab0, type: 3}
+      propertyPath: height
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185077372576699592, guid: de32c8f6a3e128c44be9ba2a9763eab0, type: 3}
+      propertyPath: radius
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185077372576699592, guid: de32c8f6a3e128c44be9ba2a9763eab0, type: 3}
       propertyPath: slowdownDistance
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8185077372576699592, guid: de32c8f6a3e128c44be9ba2a9763eab0, type: 3}
       propertyPath: endReachedDistance
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8185077372576699592, guid: de32c8f6a3e128c44be9ba2a9763eab0, type: 3}
       propertyPath: pickNextWaypointDist
@@ -2032,8 +2040,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2852086299227602396, guid: 598b335ba921a8d46bf23f04b4a59416, type: 3}
+      propertyPath: height
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2852086299227602396, guid: 598b335ba921a8d46bf23f04b4a59416, type: 3}
+      propertyPath: radius
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2852086299227602396, guid: 598b335ba921a8d46bf23f04b4a59416, type: 3}
       propertyPath: slowdownDistance
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2852086299227602396, guid: 598b335ba921a8d46bf23f04b4a59416, type: 3}
+      propertyPath: endReachedDistance
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2852086299227602396, guid: 598b335ba921a8d46bf23f04b4a59416, type: 3}
       propertyPath: constrainInsideGraph
@@ -2187,8 +2207,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3901764494301802065, guid: f38fc7804ee01f44897b769b475e13c9, type: 3}
+      propertyPath: height
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3901764494301802065, guid: f38fc7804ee01f44897b769b475e13c9, type: 3}
+      propertyPath: radius
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3901764494301802065, guid: f38fc7804ee01f44897b769b475e13c9, type: 3}
       propertyPath: slowdownDistance
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3901764494301802065, guid: f38fc7804ee01f44897b769b475e13c9, type: 3}
+      propertyPath: endReachedDistance
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3901764494301802065, guid: f38fc7804ee01f44897b769b475e13c9, type: 3}
       propertyPath: pickNextWaypointDist
