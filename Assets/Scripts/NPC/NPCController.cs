@@ -8,6 +8,7 @@ public class NPCController : MonoBehaviour
     [Header("Player")]
     [SerializeField] private Transform playerTransform;
     [SerializeField] private float detectionDistance;
+    [SerializeField] private PlayerController playerController;
 
     [Header("AI System")]
     [SerializeField] private AIPath aiPath;
@@ -29,6 +30,8 @@ public class NPCController : MonoBehaviour
     private void Start()
     {
         characterInteraction = FindObjectOfType<CharacterInteraction>();
+        playerController = FindObjectOfType<PlayerController>();
+
         character = GetComponent<YarnCharacter>();
 
         lastPosition = (Vector2) transform.position;
@@ -50,22 +53,24 @@ public class NPCController : MonoBehaviour
 
             if (isReached)
             {
-                HandleDestinationReached();
+                HandleDestinationReached();                
             }
             else
             {
                 transform.DOMove(lastPosition, 2);
                 isTalking = false;
+                playerController.HandleDialogComplete();
             }
         }
     }
 
     private void HandleDestinationReached()
     {
+        playerController.HandleDialogStart();
         Debug.Log("Se acerca camara y hace alguna funcion especifica");
         characterInteraction.LaunchDialogue(character.firstDialogue);
         isTalking = true;
-        animator.SetBool("isTalking", isTalking);
+        animator.SetBool("isTalking", isTalking);        
     }
 
     private void DistanceToFollowPlayer()

@@ -92,6 +92,7 @@ public class PlayerController : MonoBehaviour
         {
             currentWaypoint++;
         }
+
         animator.SetBool("isWalking", isMoving);
 
     }

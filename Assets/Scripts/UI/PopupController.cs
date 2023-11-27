@@ -33,8 +33,10 @@ public class PopupController : MonoBehaviour
     void Start()
     {
         float popupSize = popup.rect.height / 2;
+
         targetPosition = new Vector3(0, Screen.height / 2 - popupSize, 0);
-        offScreenPosition=new Vector3(Screen.width, Screen.height/2 - popupSize, 0);
+        offScreenPosition= new Vector3 (Screen.width, Screen.height/2 - popupSize, 0);
+
         popup.anchoredPosition3D = offScreenPosition;
 
         //AnimatePopup();

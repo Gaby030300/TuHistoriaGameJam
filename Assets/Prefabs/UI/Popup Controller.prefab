@@ -48,7 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   popup: {fileID: 1606538929115132502}
   targetPosition: {x: 0, y: 0, z: 0}
-  offScreenPosition: {x: 768, y: 432, z: 0}
+  offScreenPosition: {x: 0, y: 0, z: 0}
   duration: 1.5
   delay: 2
   easeIn: 2
