@@ -1,6 +1,9 @@
 using Pathfinding;
 using System;
 using UnityEngine;
+using Yarn;
+using Yarn.Unity;
+using static Yarn.Unity.DialogueRunner;
 
 public class PlayerController : MonoBehaviour
 {
@@ -16,19 +19,31 @@ public class PlayerController : MonoBehaviour
     [Header("Animator")]
     [SerializeField] private Animator animator;
 
+    private DialogueRunner dialogueRunner;
+
 
     private Vector2 targetPosition;
 
-    private bool isMoving;
+    public  bool isMoving;
     private bool isDialogueCompleted;
     private bool isFacingRight;
 
     public Action OnDialogStart;
     public Action OnDialogComplete;
 
+    [Header("On Node Start")]
+    [Space]
+    public StringUnityEvent onNodeStart;
+
+    [Header("On Node Complete")]
+    [Space]
+    public StringUnityEvent onNodeComplete;
+
+
     private void Awake()
     {
         currentSpeed = speedMovement;
+        dialogueRunner = FindObjectOfType<DialogueRunner>();
     }
 
     private void Update()
@@ -37,16 +52,18 @@ public class PlayerController : MonoBehaviour
         MoveTowardsTarget();
 
         OnDialogStart += HandleDialogStart;
-        OnDialogComplete += HandleDialogComplete;       
-    }
+        OnDialogComplete += HandleDialogComplete;
 
+        dialogueRunner.onNodeStart = onNodeStart;
+        dialogueRunner.onNodeComplete = onNodeComplete;
+    }
 
     private void HandleInput()
     {
         if (Input.GetMouseButtonDown(0) && !isMoving && isDialogueCompleted)
         {
             SetTargetPosition();
-            isMoving = true;
+            isMoving = true;            
             FindPath();
         }
     }
@@ -78,10 +95,9 @@ public class PlayerController : MonoBehaviour
         {
             isMoving = false;
             animator.SetBool("isWalking", isMoving);
+
             return;
         }
-
-        isMoving = true;
 
         CharacterDirection();
 
@@ -91,10 +107,10 @@ public class PlayerController : MonoBehaviour
         if (Vector2.Distance(transform.position, path.vectorPath[currentWaypoint]) < 0.2f)
         {
             currentWaypoint++;
+
+            isMoving = true;
+            animator.SetBool("isWalking", isMoving);
         }
-
-        animator.SetBool("isWalking", isMoving);
-
     }
 
     public void HandleDialogComplete()
@@ -109,6 +125,9 @@ public class PlayerController : MonoBehaviour
         speedMovement = 0;
         isDialogueCompleted = false;
         animator.SetBool("isTalking", isDialogueCompleted);
+
+        isMoving = false;
+        animator.SetBool("isWalking", isMoving);
     }
 
     private void CharacterDirection()
