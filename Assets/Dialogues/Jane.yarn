@@ -1,79 +1,81 @@
 ﻿title: Jane
 tags:
 ---
-<<set $affinityJane = 0>>
+<<if visited("Jane") is true>>
+Jane:*Smile*
+    <<else>>
+    <<set $affinityJane = 0>>
 
-Puni: Hey, I'm Puni. I'd like to get an advice...
-Puni: I've been working as a game developer for a while, but my last job wasn't the best experience.
-Puni: Long hours, low pay, and a toxic work environment.
-<<set $social_battery -= 5>>
-<<popup>>
+    Red: Hey, I'm Red. I'd like to get an advice...
+    Red: I've been working as a game developer for a while, but my last job wasn't the best experience.
+    Red: Long hours, low pay, and a toxic work environment.
+    <<set $social_battery -= 5>>
+    <<popup>>
 
-Jane: That sounds rough. I'm Jane, by the way, a recruiter for a game development company.
-Jane: Can you tell me more about the toxic work environment?
+    Jane: That sounds rough. I'm Jane, by the way, a recruiter for a game development company.
+    Jane: Can you tell me more about the toxic work environment?
 
--> Fed up with the industry  
-    Puni: Honestly, it's been a nightmare. The toxic work environment, the long hours – I'm just fed up with the whole industry.
-    <<set $affinityJane -= 5>>
--> Just looking for a change
-    Puni: Yeah, I'm just looking for a change. A better work-life balance, you know?    
-    <<set $affinityJane += 10>>
+    -> Fed up with the industry  
+        Red: Honestly, it's been a nightmare. The toxic work environment, the long hours – I'm just fed up with the whole industry.
+        <<set $affinityJane -= 5>>
+    -> Just looking for a change
+        Red: Yeah, I'm just looking for a change. A better work-life balance, you know?    
+        <<set $affinityJane += 10>>
 
-Jane: I'm sorry to hear about your experience. It's essential to find the right fit.
-Jane: What aspects are you looking for in your next job?
-<<set $social_battery -= 5>>
-<<popup>>
+    Jane: I'm sorry to hear about your experience. It's essential to find the right fit.
+    Jane: What aspects are you looking for in your next job?
+    <<set $social_battery -= 5>>
+    <<popup>>
 
--> Better work-life balance
-    Puni: I'm really hoping for a better work-life balance. My last job was too demanding.
-    <<set $affinityJane += 10>>
--> Competitive salary
-    Puni: A competitive salary is crucial. I want to feel valued for my skills and dedication.
-    <<set $affinityJane += 5>>
--> Positive work environment
-    Puni: Most importantly, I need a positive work environment. No more toxicity.
-    <<set $affinityJane += 10>>
+    -> Better work-life balance
+        Red: I'm really hoping for a better work-life balance. My last job was too demanding.
+        <<set $affinityJane += 10>>
+    -> Competitive salary
+        Red: A competitive salary is crucial. I want to feel valued for my skills and dedication.
+        <<set $affinityJane += 5>>
+    -> Positive work environment
+        Red: Most importantly, I need a positive work environment. No more toxicity.
+        <<set $affinityJane += 10>>
 
-Jane: It's understandable. We prioritize a healthy work culture in our company.
-Jane: How do you feel about flexible working hours and remote options?
-<<set $social_battery += 10>>
-<<popup>>
-
--> Love it
-    Puni: I love the idea of flexible hours and remote work. It gives a better work-life balance.
-    <<set $affinityJane += 15>>
--> It's not for me
-    Puni: I found it challenging to stay focused and maintain a routine.
-    <<set $affinityJane -= 5>>
-
-Jane: We're developing an exciting new project, and we're looking for skilled developers.
-Jane: Do you have any specific skills or projects you're particularly proud of?
-
-Puni: I've worked on a couple of mobile games, and I'm proud of the innovative gameplay mechanics.
-<<set $affinityJane += 10>>
-
-Jane: That sounds impressive. We value creativity and innovation.
-Jane: How do you handle tight deadlines and pressure situations?
-<<set $social_battery -= 5>>
-<<popup>>
-
--> Stay calm
-    Puni: I try to stay calm and focused. It's all about effective time management.    
-    Jane: Great to hear. We believe in a supportive team that collaborates under pressure.
-    Jane: We're interested in having you for an interview to discuss your experiences and goals further.
-    <<set $affinityJane += 10>>
+    Jane: It's understandable. We prioritize a healthy work culture in our company.
+    Jane: How do you feel about flexible working hours and remote options?
     <<set $social_battery += 10>>
     <<popup>>
 
--> It's overwhelming
-    Puni: I've been in situations where it felt like the stress was too much to handle.
-    Jane: Ok... I'll review your profile, and if there's a fit, we'll be in touch.
-    Jane: Thank you for your time.
-    <<set $affinityJane -= 10>>
+    -> Love it
+        Red: I love the idea of flexible hours and remote work. It gives a better work-life balance.
+        <<set $affinityJane += 15>>
+    -> It's not for me
+        Red: I found it challenging to stay focused and maintain a routine.
+        <<set $affinityJane -= 5>>
+
+    Jane: We're developing an exciting new project, and we're looking for skilled developers.
+    Jane: Do you have any specific skills or projects you're particularly proud of?
+
+    Red: I've worked on a couple of mobile games, and I'm proud of the innovative gameplay mechanics.
+    <<set $affinityJane += 10>>
+
+    Jane: That sounds impressive. We value creativity and innovation.
+    Jane: How do you handle tight deadlines and pressure situations?
+    <<set $social_battery -= 5>>
+    <<popup>>
+
+    -> Stay calm
+        Red: I try to stay calm and focused. It's all about effective time management.    
+        Jane: Great to hear. We believe in a supportive team that collaborates under pressure.
+        Jane: We're interested in having you for an interview to discuss your experiences and goals further.
+        <<set $affinityJane += 10>>
+        <<set $social_battery += 10>>
+        <<popup>>
+
+    -> It's overwhelming
+        Red: I've been in situations where it felt like the stress was too much to handle.
+        Jane: Ok... I'll review your profile, and if there's a fit, we'll be in touch.
+        Jane: Thank you for your time.
+        <<set $affinityJane -= 10>>
 
 
-Jane: I need to keep talking with other people. See you around!
-<<affinity "Jane" {$affinityJane}>>
-
-
+    Jane: I need to keep talking with other people. See you around!
+    <<affinity "Jane" {$affinityJane}>>
+<<endif>>
 ===

@@ -2,82 +2,84 @@
 tags:
 
 ---
+<<if visited("Elena")>>
+Elena:[pause=200].[/pause][pause=200].[/pause].
+<<else>>
+    <<set $affinityElena = 0>>
 
-<<set $social_battery = 100>>
-<<set $affinityElena = 0>>
+    Puni: Hi there, I'm Puni.
+    Puni: I'm trying to improve in the industry.
+    Elena: Oh, hello. I'm Elena, pleased to meet you.
+    Elena: I run a design consultancy firm specializing in gamified solutions.
+    <<set $social_battery -= 20>>
+    <<popup>>
 
-Puni: Hi there, I'm Puni.
-Puni: I'm trying to improve in the industry.
-Elena: Oh, hello. I'm Elena, pleased to meet you.
-Elena: I run a design consultancy firm specializing in gamified solutions.
-<<set $social_battery -= 20>>
-<<popup>>
+    -> Gamified solutions?
+        Puni: What do you mean by "gamified solutions"?
+        Elena: It's about integrating game mechanics into various industries.
+        Elena: It enhances engagement and user experience.
+        Elena: A way to make serious things more fun, you know?
+        <<set $affinityElena -= 5>>
+    -> Just curious
+        Puni: I'm just curious about your work.
+        <<set $affinityElena += 5>>
 
--> Gamified solutions?
-    Puni: What do you mean by "gamified solutions"?
-    Elena: It's about integrating game mechanics into various industries.
-    Elena: It enhances engagement and user experience.
-    Elena: A way to make serious things more fun, you know?
-    <<set $affinityElena -= 5>>
--> Just curious
-    Puni: I'm just curious about your work.
-    <<set $affinityElena += 5>>
+    Elena: Have you ever thought about incorporating games into different fields?
+    Puni: Maybe...
+    -> How effective is it?
+        Puni: How effective are these gamified solutions?
+        Puni: I think I've seen some of them before.
+        Elena: Highly effective. It revolutionizes user engagement.
+        Elena: It's the future of interaction and education.
+        <<set $affinityElena += 10>>
+    -> Not sure
+        Puni: I'm not entirely sure about its impact.
+        Elena: Ah, it's understandable. Not everyone sees its potential.
+        Elena: But trust me, it's a game-changer.
+        <<set $affinityElena -= 5>>
 
-Elena: Have you ever thought about incorporating games into different fields?
-Puni: Maybe...
--> How effective is it?
-    Puni: How effective are these gamified solutions?
-    Puni: I think I've seen some of them before.
-    Elena: Highly effective. It revolutionizes user engagement.
-    Elena: It's the future of interaction and education.
-    <<set $affinityElena += 10>>
--> Not sure
-    Puni: I'm not entirely sure about its impact.
-    Elena: Ah, it's understandable. Not everyone sees its potential.
-    Elena: But trust me, it's a game-changer.
-    <<set $affinityElena -= 5>>
+    Elena: I'm seeing something[pause=200].[/pause][pause=200].[/pause][pause=200].[/pause] in your eyes
+    Elena: You have potential, but you need to focus on practicality, not just passion.
+    <<set $social_battery -= 5>>
+    <<popup>>
+    Elena: People often underestimate the practical side of game design.
+    Elena: Passion is good, but results matter more in this industry.
+    Puni: I think you're right, I was feeling something similar
+    Elena: Do you have any experience in game development?
+    -> A bit
+        <<if visited("Shoecamp") is true>>
+            Puni: I talked with a crazy lady sooner about that    
+        <<endif>>
+        Puni: I have some experience in game development.
+        Elena: That's a good start. Practical experience is vital.
+        Elena: Would you be interested in a mentorship program?
+        <<set $affinityElena += 15>>
+    -> Not really
+        <<if visited("Shoecamp") is true>>
+            Puni: I talked with a crazy lady sooner about that    
+        <<endif>>
+        Puni: Not really, I'm still exploring my options.
+        Elena: That's fine, it's good to keep exploring before committing.
+        <<set $affinityElena -= 15>>
 
-Elena: I'm seeing something[pause=200].[/pause][pause=200].[/pause][pause=200].[/pause] in your eyes
-Elena: You have potential, but you need to focus on practicality, not just passion.
-<<set $social_battery -= 5>>
-<<popup>>
-Elena: People often underestimate the practical side of game design.
-Elena: Passion is good, but results matter more in this industry.
-Puni: I think you're right, I was feeling something similar
-Elena: Do you have any experience in game development?
--> A bit
-    <<if visited("Shoecamp") is true>>
-        Puni: I talked with a crazy lady sooner about that    
-    <<endif>>
-    Puni: I have some experience in game development.
-    Elena: That's a good start. Practical experience is vital.
-    Elena: Would you be interested in a mentorship program?
-    <<set $affinityElena += 15>>
--> Not really
-    <<if visited("Shoecamp") is true>>
-        Puni: I talked with a crazy lady sooner about that    
-    <<endif>>
-    Puni: Not really, I'm still exploring my options.
-    Elena: That's fine, it's good to keep exploring before committing.
-    <<set $affinityElena -= 15>>
+    Elena: Your potential could be an asset to our project.
+    Elena: We're seeking someone with fresh ideas.
+    Elena: Would you be interested in collaborating with us?
+        -> Yes, definitely
+            Puni: Absolutely, I'd love to collaborate!
+            Elena: Fantastic! Let's exchange contacts, and we'll discuss further.
+            Elena: Here's my card. Don't hesitate to reach out.
+            <<set $affinityElena += 20>>
+        -> Not at the moment
+            Puni: I appreciate the offer, but I'm not ready for a commitment.
+            Elena: That's understandable. The offer stands if you change your mind.
+            Elena: Keep developing your skills; they'll be valuable.
+            <<set $affinityElena -= 10>>
 
-Elena: Your potential could be an asset to our project.
-Elena: We're seeking someone with fresh ideas.
-Elena: Would you be interested in collaborating with us?
-    -> Yes, definitely
-        Puni: Absolutely, I'd love to collaborate!
-        Elena: Fantastic! Let's exchange contacts, and we'll discuss further.
-        Elena: Here's my card. Don't hesitate to reach out.
-        <<set $affinityElena += 20>>
-    -> Not at the moment
-        Puni: I appreciate the offer, but I'm not ready for a commitment.
-        Elena: That's understandable. The offer stands if you change your mind.
-        Elena: Keep developing your skills; they'll be valuable.
-        <<set $affinityElena -= 10>>
-
-Elena: Do you mind if I check my phone?
-Elena: I have some mails, sorry
-<<set $social_battery -= 5>>
-Puni: Okay then.
-<<affinity "Elena" {$affinityElena}>>
+    Elena: Do you mind if I check my phone?
+    Elena: I have some mails, sorry
+    <<set $social_battery -= 5>>
+    Puni: Okay then.
+    <<affinity "Elena" {$affinityElena}>>
+<<endif>>
 ===

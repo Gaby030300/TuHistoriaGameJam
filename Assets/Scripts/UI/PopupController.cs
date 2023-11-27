@@ -7,24 +7,23 @@ public class PopupController : MonoBehaviour
 {
     [Tooltip("Reference to popup UI element")]
     public RectTransform popup;
-    [Tooltip("Reference to final destination for the popup")]
-    public Vector3 targetPosition;
-    [Tooltip("Reference to hide the popup")]
-    public Vector3 offScreenPosition;
     [Tooltip("Duration for the popup animation")]
-    public float duration = 1.5f; // 
+    public float duration = 1.5f;
     [Tooltip("Time the popup stays on the screen before leaving")]
-    public float delay = 1.0f; // 
-
+    public float delay = 1.0f;
     [SerializeField] private Ease easeIn;
     [SerializeField] private Ease easeOut;
 
+    private Vector3 targetPosition;
+    private Vector3 offScreenPosition;
+
     private SliderController sliderController;
     private SocialBatteryManager socialBatteryManager;
+
     private void Awake()
     {
         DialogueRunner dialogueRunner = FindObjectOfType<DialogueRunner>();
-        dialogueRunner.AddCommandHandler("popup",CallPopup);
+        dialogueRunner.AddCommandHandler("popup", CallPopup);
 
         socialBatteryManager = FindObjectOfType<SocialBatteryManager>();
         sliderController = GetComponent<SliderController>();
@@ -32,14 +31,29 @@ public class PopupController : MonoBehaviour
 
     void Start()
     {
-        float popupSize = popup.rect.height / 2;
-
-        targetPosition = new Vector3(0, Screen.height / 2 - popupSize, 0);
-        offScreenPosition= new Vector3 (Screen.width, Screen.height/2 - popupSize, 0);
-
+        CalculatePopupPositions();
         popup.anchoredPosition3D = offScreenPosition;
+    }
 
-        //AnimatePopup();
+    void CalculatePopupPositions()
+    {
+        float popupHeight = popup.rect.height / 2;
+        float popupWidth = popup.rect.width / 2;
+
+        float screenWidth = Screen.width;
+        float screenHeight = Screen.height;
+
+        // Calculate target and off-screen positions based on screen aspect ratio
+        float aspectRatio = screenWidth / screenHeight;
+
+        float targetX = 0;
+        float targetY = (screenHeight / 2) - popupHeight*4;
+
+        float offScreenX = screenWidth;
+        float offScreenY = (screenHeight / 2) - popupHeight*4;
+
+        targetPosition = new Vector3(targetX, targetY, 0);
+        offScreenPosition = new Vector3(offScreenX, offScreenY, 0);
     }
 
     public void CallPopup()
@@ -48,7 +62,7 @@ public class PopupController : MonoBehaviour
         sliderController.OnSliderValueChanged(sb);
         AnimatePopup();
     }
-    
+
     [ContextMenu("popup")]
     public void AnimatePopup()
     {
@@ -57,7 +71,6 @@ public class PopupController : MonoBehaviour
             .OnComplete(() => HidePopup());
     }
 
-    
     void HidePopup()
     {
         popup.DOAnchorPos3D(offScreenPosition, duration)
