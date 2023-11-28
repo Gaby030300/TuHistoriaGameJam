@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 using Yarn.Unity;
+using Newtonsoft.Json;
 
 public class AffinityManager : MonoBehaviour
 {
@@ -40,13 +41,14 @@ public class AffinityManager : MonoBehaviour
             };
             contracts.Add(angensContract);
             
-            SaveContracts();
         }
         else
         {
             Debug.Log("Affinity value too low for a contract.");
             // Handle cases where affinity is too low for a contract
         }
+        
+        SaveContracts();
     }
 
     private Contract GenerateContract(string name, float value)
@@ -58,14 +60,12 @@ public class AffinityManager : MonoBehaviour
 
         if (value <= 10)
         {
-            if (opportunitySelector >= 4)
-            {
-                // Coffee Deliverer
+            // Coffee Deliverer
                 contract.Position = "Coffee Deliverer";
                 contract.DailyHours = Random.Range(4, 7); // Varying hours
                 contract.Salary = "$";
                 contract.Type = Contract.ContractType.BadJob;
-            }
+            
         }
         else if (value <= 20)
         {
@@ -98,20 +98,20 @@ public class AffinityManager : MonoBehaviour
     }
     private void SaveContracts()
     {
-        string contractsJson = JsonUtility.ToJson(contracts);
+        string contractsJson = JsonConvert.SerializeObject(contracts);
         PlayerPrefs.SetString("Contracts", contractsJson);
         PlayerPrefs.Save();
     }
 }
 
-// Contract class to store job details
+[Serializable]
 public class Contract
 {
-    public string InviteOrOfferFrom { get; set; } // Person's name offering the job
-    public string Position { get; set; }
-    public int DailyHours { get; set; }
-    public string Salary { get; set; }
-    public string Comments { get; set; } // Additional comments for the contract
+    public string InviteOrOfferFrom; // Person's name offering the job
+    public string Position;
+    public int DailyHours;
+    public string Salary;
+    public string Comments; // Additional comments for the contract
     public ContractType Type; // New variable to store ContractType
 
     public enum ContractType

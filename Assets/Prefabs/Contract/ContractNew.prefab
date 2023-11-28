@@ -1037,7 +1037,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40cf8415f4a50aa4ea12b3923d814b2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: {fileID: 0}
+  nameText: {fileID: 4186014892921873974}
   positionText: {fileID: 7820467384885740840}
   hoursText: {fileID: 6945474169610647839}
   salaryText: {fileID: 4891541102196935405}

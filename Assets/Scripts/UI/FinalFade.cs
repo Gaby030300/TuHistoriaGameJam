@@ -30,6 +30,7 @@ public class FinalFade : MonoBehaviour
 
     private void Start()
     {
+        dialogueRunner = FindObjectOfType<DialogueRunner>();
         dialogueRunner.onDialogueComplete.AddListener(uiController.GoBackMenu);
     }
 

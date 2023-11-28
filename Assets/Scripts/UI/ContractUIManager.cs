@@ -1,6 +1,8 @@
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
+using Newtonsoft.Json;
 
 public class ContractUIManager : MonoBehaviour
 {
@@ -20,6 +22,7 @@ public class ContractUIManager : MonoBehaviour
 
     private void CreateContractUI(Contract contract)
     {
+        Debug.Log("Creating Contract");
         GameObject contractUI = Instantiate(contractUIPrefab, contractUIParent);
         ContractUI contractUIScript = contractUI.GetComponent<ContractUI>();
 
@@ -36,11 +39,12 @@ public class ContractUIManager : MonoBehaviour
     private void LoadContracts()
     {
         contractsToDisplay = new List<Contract>();
+        Debug.Log("Load Contracts");
 
         if (PlayerPrefs.HasKey("Contracts"))
         {
             string contractsJson = PlayerPrefs.GetString("Contracts");
-            contractsToDisplay = JsonUtility.FromJson<List<Contract>>(contractsJson);
+            contractsToDisplay = JsonConvert.DeserializeObject<List<Contract>>(contractsJson);
         }
     }
 }

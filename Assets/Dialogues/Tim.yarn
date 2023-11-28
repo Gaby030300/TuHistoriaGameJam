@@ -2,6 +2,7 @@
 tags: 
 
 ---
+<<set $affinityTim = 0>>
 <<if visited("Tim") is true>>
 Tim:[pause=200].[/pause][pause=200].[/pause][pause=200].[/pause]
 <<else>>
