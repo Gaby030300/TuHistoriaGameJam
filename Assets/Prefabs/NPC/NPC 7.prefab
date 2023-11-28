@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6101180130773239010}
   - component: {fileID: 2384163567189458704}
   - component: {fileID: 7285573192448006242}
-  - component: {fileID: 6628346561327940484}
+  - component: {fileID: 8259054786514814212}
   m_Layer: 0
   m_Name: NPC 7
   m_TagString: NPC
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 1408171921, guid: 478807d41fb12f4488c7e43d729933a4, type: 3}
+  m_Sprite: {fileID: -373901212, guid: 2d43996da75d4884e8e4beb855d903ad, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -106,7 +106,7 @@ MonoBehaviour:
   detectionDistance: 5
   aiPath: {fileID: 2384163567189458704}
   characterInteraction: {fileID: 0}
-  animator: {fileID: 6628346561327940484}
+  animator: {fileID: 0}
   isReached: 0
 --- !u!114 &6657176828682674594
 MonoBehaviour:
@@ -208,7 +208,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   target: {fileID: 0}
---- !u!95 &6628346561327940484
+--- !u!95 &8259054786514814212
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -218,7 +218,7 @@ Animator:
   m_GameObject: {fileID: 1580296129185014523}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f3ac50cd9b06e3b429e6677e0be75421, type: 2}
+  m_Controller: {fileID: 9100000, guid: 09bf4616f7326e747a835d6480b5e55f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
