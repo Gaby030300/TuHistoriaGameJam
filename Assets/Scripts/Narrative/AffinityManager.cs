@@ -92,7 +92,7 @@ public class AffinityManager : MonoBehaviour
             contract.Salary = "$$$";
             contract.Type = Contract.ContractType.GoodJob;
         }
-
+        SaveContracts();
         return contract;
     }
     private void SaveContracts()
