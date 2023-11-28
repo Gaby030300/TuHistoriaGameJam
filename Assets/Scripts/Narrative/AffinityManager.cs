@@ -35,7 +35,8 @@ public class AffinityManager : MonoBehaviour
                 Position = "Big U Instructor",
                 DailyHours = 12,
                 Salary = "$$",
-                Comments = "Hope you won't be a creepy one like the last one"
+                Comments = "Hope you won't be a creepy one like the last one",
+                Type = Contract.ContractType.Bootcamp
             };
             contracts.Add(angensContract);
         }
@@ -61,6 +62,7 @@ public class AffinityManager : MonoBehaviour
                 contract.Position = "Coffee Deliverer";
                 contract.DailyHours = Random.Range(4, 7); // Varying hours
                 contract.Salary = "$";
+                contract.Type = Contract.ContractType.BadJob;
             }
         }
         else if (value <= 20)
@@ -70,6 +72,7 @@ public class AffinityManager : MonoBehaviour
             contract.Position = assistantRoles[Random.Range(0, assistantRoles.Length)];
             contract.DailyHours = Random.Range(6, 9); // Varying hours
             contract.Salary = "$$";
+            contract.Type = Contract.ContractType.MidJob;
         }
         else if (value <= 40)
         {
@@ -78,6 +81,7 @@ public class AffinityManager : MonoBehaviour
             contract.Position = developerRoles[Random.Range(0, developerRoles.Length)];
             contract.DailyHours = Random.Range(7, 10); // Varying hours
             contract.Salary = "$$$";
+            contract.Type = Contract.ContractType.MidJob;
         }
         else
         {
@@ -86,6 +90,7 @@ public class AffinityManager : MonoBehaviour
             contract.Position = artistRoles[Random.Range(0, artistRoles.Length)];
             contract.DailyHours = Random.Range(6, 11); // Varying hours
             contract.Salary = "$$$";
+            contract.Type = Contract.ContractType.GoodJob;
         }
 
         return contract;
@@ -106,4 +111,15 @@ public class Contract
     public int DailyHours { get; set; }
     public string Salary { get; set; }
     public string Comments { get; set; } // Additional comments for the contract
+    public ContractType Type; // New variable to store ContractType
+
+    public enum ContractType
+    {
+        EndDialogue,
+        NoJob,
+        BadJob,
+        MidJob,
+        GoodJob,
+        Bootcamp
+    }
 }

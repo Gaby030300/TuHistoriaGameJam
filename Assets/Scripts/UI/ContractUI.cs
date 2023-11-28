@@ -9,6 +9,7 @@ public class ContractUI : MonoBehaviour
     public TMP_Text salaryText;
     public TMP_Text commentsText;
 
+    public Contract contractGot;
     public void FillContractUI(Contract contract)
     {
         nameText.text = contract.InviteOrOfferFrom;
@@ -16,6 +17,8 @@ public class ContractUI : MonoBehaviour
         hoursText.text = "Hours: " + contract.DailyHours.ToString();
         salaryText.text = "Salary: " + contract.Salary;
         commentsText.text = "Comments: " + contract.Comments;
+
+        contractGot = contract;
     }
 }
 
