@@ -2012,7 +2012,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3706226180918736768, guid: d585cc58c8b9c1d4b9c29636e602cb71, type: 3}
       propertyPath: m_FlipX
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706226180918736768, guid: d585cc58c8b9c1d4b9c29636e602cb71, type: 3}
+      propertyPath: m_Size.x
+      value: 5.0008526
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706226180918736768, guid: d585cc58c8b9c1d4b9c29636e602cb71, type: 3}
+      propertyPath: m_Size.y
+      value: 7.4500003
       objectReference: {fileID: 0}
     - target: {fileID: 4257540959125071453, guid: d585cc58c8b9c1d4b9c29636e602cb71, type: 3}
       propertyPath: target
