@@ -1,0 +1,49 @@
+﻿title: EndDialogue
+tags:
+---
+The End: Your efforts made it this far.
+===
+
+title: NoJob
+---
+The End: A job?.
+The End: Not for now.
+The End: But this wasn't the real real End.
+The End: You can try it again in a another Networking Party.
+===
+
+title: BadJob
+---
+The End: This was just the beginnig.
+The End: Your first job, not so great conditions, but you're learning!.
+The End: Learning about the industry, about the crunch, about how to survive.
+The End: In a couple of months, your experience will be enough to run of that place.
+===
+
+title: MidJob
+---
+The End: An usual job in this industry.
+The End: Everything is so average, but you're so happy.
+The End: Sometimes you have to make some aditional efforts.
+The End: But you're saving some money, knowing amazing people, most of the time.
+The End: Keep it this way for a while, you have a future here.
+===
+
+title: GoodJob
+---
+The End: You nailed it! What a good first impression in the community.
+The End: And remember, this was just the start in your career.
+The End: You're learning so much faster, even if that means crunch, the salary is perfect.
+The End: A brilliant future is ahead of you.
+===
+
+title: bootcamp
+---
+???: You took that weird aopportunity.
+???: Even without experience your commited to change people's lifes.
+???: Your shift ended being more than 12 hours.
+???: The students ask for aspects that you never heard of.
+???: The people there doesn't appreciete your efforts, but you're earning a life.
+???: Every week you received a survey, and everybody seems to be pissed off.
+???: Hold it for 3 months more.
+===

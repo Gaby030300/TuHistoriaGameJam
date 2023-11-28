@@ -11,6 +11,7 @@ public class AffinityManager : MonoBehaviour
 
     private void Awake()
     {
+        PlayerPrefs.DeleteAll();
         DialogueRunner dialogueRunner = FindObjectOfType<DialogueRunner>();
         dialogueRunner.AddCommandHandler<string, float>("affinity", NewAffinityEntry);
     }
@@ -54,10 +55,13 @@ public class AffinityManager : MonoBehaviour
 
         if (value <= 10)
         {
-            // Coffee Deliverer
-            contract.Position = "Coffee Deliverer";
-            contract.DailyHours = Random.Range(4, 7); // Varying hours
-            contract.Salary = "$";
+            if (opportunitySelector >= 4)
+            {
+                // Coffee Deliverer
+                contract.Position = "Coffee Deliverer";
+                contract.DailyHours = Random.Range(4, 7); // Varying hours
+                contract.Salary = "$";
+            }
         }
         else if (value <= 20)
         {
@@ -78,13 +82,19 @@ public class AffinityManager : MonoBehaviour
         else
         {
             // Tech Artist or similar roles
-            string[] artistRoles = { "Tech Artist", "3D Modeler", "Graphics Designer" };
+            string[] artistRoles = { "Tech Artist", "Game Designer", "Level Designer" };
             contract.Position = artistRoles[Random.Range(0, artistRoles.Length)];
-            contract.DailyHours = Random.Range(8, 11); // Varying hours
+            contract.DailyHours = Random.Range(6, 11); // Varying hours
             contract.Salary = "$$$";
         }
 
         return contract;
+    }
+    private void SaveContracts()
+    {
+        string contractsJson = JsonUtility.ToJson(contracts);
+        PlayerPrefs.SetString("Contracts", contractsJson);
+        PlayerPrefs.Save();
     }
 }
 
