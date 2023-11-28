@@ -3,20 +3,21 @@ tags:
 ---
 <<if visited("Jane") is true>>
 Jane:*Smile*
-    <<else>>
+<<else>>
     <<set $affinityJane = 0>>
 
     Red: Hey, I'm Red. I'd like to get an advice...
     Red: I've been working as a game developer for a while, but my last job wasn't the best experience.
     Red: Long hours, low pay, and a toxic work environment.
-    <<set $social_battery -= 5>>
+    <<set $social_battery -= 15>>
     <<popup>>
 
     Jane: That sounds rough. I'm Jane, by the way, a recruiter for a game development company.
     Jane: Can you tell me more about the toxic work environment?
 
     -> Fed up with the industry  
-        Red: Honestly, it's been a nightmare. The toxic work environment, the long hours – I'm just fed up with the whole industry.
+        Red: Honestly, it's been a nightmare. The toxic work environment, the long hours 
+        Red: I'm just fed up with the whole industry.
         <<set $affinityJane -= 5>>
     -> Just looking for a change
         Red: Yeah, I'm just looking for a change. A better work-life balance, you know?    

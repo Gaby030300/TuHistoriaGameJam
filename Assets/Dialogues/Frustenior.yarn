@@ -5,7 +5,9 @@ tags:
 <<if visited("Frustenior") is true>>
 Frustenior: [pause=200]S[/pause][pause=200]L[/pause][pause=200]U[/pause][pause=200]C[/pause][pause=200]K[/pause]
 <<else>>
-    <<set $affinityAngen = 0>>
+    <<set $affinityFrustreinor = 0>>
+    <<set $social_battery -=20>>
+    <<popup>>
 
     Red: Hi there, I'm Red.
     Red: It is my first time at an event like this one. 
@@ -20,13 +22,11 @@ Frustenior: [pause=200]S[/pause][pause=200]L[/pause][pause=200]U[/pause][pause=2
         Red: I don't have much experience yet, 
         Red: but I've been working on personal projects.
         Frustrenior: Cool! That's a big step. 
-    <<set $social_battery += 5>>
-    <<popup>>
+        <<set $affinityFrustreinor += 5>>
     -> Not at all.
         Red: No... I don't have any. Not a bit. 
         Frustrenior: Oh. Okey.
         <<set $affinityFrustreinor -= 5>>
-    <<popup>>
 
     Red: Do you have any advice for me? 
     Frustenior: The best advice I have for you, is that you must LOVE doing this. You must have the passion. You have to take this job as an everyday routine, you have to keep learning and never stop. Never. Ever. Not even sleeping. 
@@ -41,6 +41,7 @@ Frustenior: [pause=200]S[/pause][pause=200]L[/pause][pause=200]U[/pause][pause=2
         Red: That must be a lot of stress to bare with. 
         Frustrenior: Well. Yeah, like any other one. 
     <<set $affinityFrustreinor -= 5>>
+    <<set $social_battery -=5>>
     <<popup>>
 
 
@@ -51,18 +52,14 @@ Frustenior: [pause=200]S[/pause][pause=200]L[/pause][pause=200]U[/pause][pause=2
         Frustrenior: Everyone wants to be TechArt today.
         Frustrenior: But I might show this to my boss. Maybe he would like it for more projects. 
         Frustrenior: I like your VIIIIIBES dude. You got the FLOOOW of our company. 
-    <<set $affinityFrustreinor += 10>>
+        <<set $affinityFrustreinor += 15>>
 
     -> Is not finished yet. Sorry 
         Red: Ehhh... maybe not. Is not finished. I don't like it. 
         Frustrenior: Alright. I suggest you to put some effort on it for the next event. 
-    <<set $affinityFrustreinor -= 20>>
-    <<popup>>
+        <<set $affinityFrustreinor -= 10>>
+        
     Frustrenior: Oh, I just saw my Sluck, my team just crashed today's demo. I have to answer now... 
-
-
-        <<set $affinityFrustrenior -= 5>>
-
-    <<affinity "Frustrenior" {$affinityFrustrenior}>>
+    <<affinity "Frustrenior" {$affinityFrustreinor}>>
 <<endif>>
 ===
