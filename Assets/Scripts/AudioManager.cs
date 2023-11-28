@@ -31,9 +31,9 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        SetSnapshotOut();
         audioSource = GetComponent<AudioSource>();
         audioSource.volume = 0;
+        SetSnapshotOut();
         audioSource.DOFade(0.5f, 1);
     }
 

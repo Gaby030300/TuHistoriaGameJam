@@ -22,7 +22,7 @@ public class SocialBatteryChecker : MonoBehaviour
 
     private void CheckSocialBattery()
     {
-        int socialBattery;
+        float socialBattery;
         variableStorage.TryGetValue("$social_battery", out socialBattery);
 
         if (socialBattery <= 0)
