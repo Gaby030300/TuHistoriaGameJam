@@ -39,6 +39,8 @@ public class AffinityManager : MonoBehaviour
                 Type = Contract.ContractType.Bootcamp
             };
             contracts.Add(angensContract);
+            
+            SaveContracts();
         }
         else
         {
@@ -92,7 +94,6 @@ public class AffinityManager : MonoBehaviour
             contract.Salary = "$$$";
             contract.Type = Contract.ContractType.GoodJob;
         }
-        SaveContracts();
         return contract;
     }
     private void SaveContracts()
