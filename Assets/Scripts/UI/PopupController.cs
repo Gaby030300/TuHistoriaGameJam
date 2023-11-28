@@ -37,8 +37,8 @@ public class PopupController : MonoBehaviour
 
     void CalculatePopupPositions()
     {
-        float popupHeight = popup.rect.height / 2;
-        float popupWidth = popup.rect.width / 2;
+        float popupHeight = popup.rect.height/4;
+        float popupWidth = popup.rect.width;
 
         float screenWidth = Screen.width;
         float screenHeight = Screen.height;
@@ -47,10 +47,10 @@ public class PopupController : MonoBehaviour
         float aspectRatio = screenWidth / screenHeight;
 
         float targetX = 0;
-        float targetY = (screenHeight / 2) - popupHeight*4;
+        float targetY = 0;
 
-        float offScreenX = screenWidth;
-        float offScreenY = (screenHeight / 2) - popupHeight*4;
+        float offScreenX = -popupWidth;
+        float offScreenY = -0;
 
         targetPosition = new Vector3(targetX, targetY, 0);
         offScreenPosition = new Vector3(offScreenX, offScreenY, 0);

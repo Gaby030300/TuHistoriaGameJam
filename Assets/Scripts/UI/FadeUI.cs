@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -26,5 +27,10 @@ public class FadeUI : MonoBehaviour
                 }
             }
             );
+    }
+
+    private void OnDestroy()
+    {
+        DOTween.KillAll();
     }
 }
