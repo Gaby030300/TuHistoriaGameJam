@@ -40,7 +40,7 @@ Jane:*Smile*
 
     Jane: It's understandable. We prioritize a healthy work culture in our company.
     Jane: How do you feel about flexible working hours and remote options?
-    <<set $social_battery += 10>>
+    <<set $social_battery -= 5>>
     <<popup>>
 
     -> Love it
@@ -66,8 +66,6 @@ Jane:*Smile*
         Jane: Great to hear. We believe in a supportive team that collaborates under pressure.
         Jane: We're interested in having you for an interview to discuss your experiences and goals further.
         <<set $affinityJane += 10>>
-        <<set $social_battery += 10>>
-        <<popup>>
 
     -> It's overwhelming
         Red: I've been in situations where it felt like the stress was too much to handle.

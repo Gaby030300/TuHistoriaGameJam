@@ -14,7 +14,7 @@ tags:
     Red: [pause=200].[/pause][pause=200].[/pause][pause=200].[/pause]
     Angen: Whatever, I'm <color=red>Angen</color>.
     Ange: I run a shoe camp, if that even matters.
-    <<set $social_battery -= 20>>
+    <<set $social_battery -= 25>>
     <<popup>>
 
     -> What's a "shoe camp"?
@@ -44,9 +44,10 @@ tags:
         Red: I really need a job
         Angen: That doesn't matter! you can work, study, being a parent
         Angen: And still join the shoe camp!
+        <<set $affinityAngen += 5>>
 
     Angen: If you don't join us you'll be nothing and nobody in life
-    <<set $social_battery -= 5>>
+    <<set $social_battery -= 10>>
     <<popup>>
     Angen: The social department of the big U pays us to screw [pause=200].[/pause][pause=200].[/pause][pause=200].[/pause]
     Angen: Teach students for 3 months
@@ -85,7 +86,7 @@ tags:
             <<set $affinityAngen -= 20>>
 
     Angen: I have a call, see ya.
-    <<set $social_battery -= 25>>
+    <<set $social_battery -= 15>>
     Red: OK?
     <<affinity "Angen" {$affinityAngen}>>
 <<endif>>

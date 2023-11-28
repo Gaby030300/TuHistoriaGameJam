@@ -2,40 +2,34 @@
 tags:
 ---
 
-<<set $affinityMia = 0>>
 <<if visited("Mia") is true>>
 Mia: Sorry, I'm checking something
 <<else>>
 
+    <<set $affinityMia = 0>>
     Red: Hey, Red here. 
     Mia: Hi Red, I'm Mia. 
     Mia: I work for a VR game development company.
-    <<set $social_battery -= 5>>
+    <<set $social_battery -= 25>>
     <<popup>>
-
-    <<popup "CompanyInfo">>
+    Red: Ohhh
         -> What's your company about?
             Red: Tell me more about your company.
             Mia: We create immersive VR experiences, blending tech and storytelling.
             Red: That sounds fascinating.
             <<set $affinityMia += 10>>
-
         -> Interesting...
             Red: Immersive VR experiences, huh? 
             Red: Sounds like another overhyped trend.
             Mia: Well, we believe in pushing boundaries...
             <<set $affinityMia -= 5>>
 
-    Mia: VR is a game-changer in the making.
     Mia: Ever thought of turning your passion into a VR Games?
-    <<set $social_battery -= 5>>
-    <<popup>>
-
+    Mia: VR is a game-changer in the making.
         -> Absolutely!
             Red: VR being a game-changer? I'm all in! 
             Red: I've been considering diving into the VR world.
             <<set $affinityMia += 5>>
-
         -> Not sure about that...
             Red: Well, VR is intriguing, but I'm not entirely convinced.
             Mia: I understand there might be skepticism...
@@ -51,9 +45,6 @@ Mia: Sorry, I'm checking something
             Mia: How about an interview?
             Red: Absolutely! Let's exchange contacts.
             <<set $affinityMia += 15>>
-            <<set $social_battery += 10>>
-            <<popup>>
-
         -> Not sure
             Red: Not sure about commitment right now.
             Mia: No worries. 
@@ -66,6 +57,6 @@ Mia: Sorry, I'm checking something
     <<set $social_battery -= 5>>
     <<popup>>
     Red: No problem at all.
-    <<affinity "Mia" $affinityMia>>
+    <<affinity "Mia" {$affinityMia}>>
 <<endif>>
 ===

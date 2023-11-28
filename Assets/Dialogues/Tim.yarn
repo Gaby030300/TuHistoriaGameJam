@@ -8,15 +8,13 @@ Tim:[pause=200].[/pause][pause=200].[/pause][pause=200].[/pause]
   <<set $affinityTim = 0>>
   Red: Um, hi there. I'm Red. I...[pause=1000] um, [/pause] really like games.
   Red: Sorry I interrupted you!
-  <<set $social_battery -=15>>
+  <<set $social_battery -=25>>
   <<popup>>
   Tim: Oh, hey. It's ok
   Tim: Nice to meet you. I'm Tim
   Tim: What brings you here?
     -> Uh, sorry
       Red: I'm not sure why I'm here. Games, I guess...
-      <<set $social_battery -= 15>>
-      <<popup>>
       <<set $affinityTim -= 10>>
     -> Games, definitely! 
       Red: Nothing more but Games, definitely!
@@ -26,12 +24,10 @@ Tim:[pause=200].[/pause][pause=200].[/pause][pause=200].[/pause]
     -> Game design
       Red: Game design and storytelling.
       Red: They're so intricate and fascinating.
-      <<set $social_battery += 10>>
-      <<popup>>
+      <<set $affinityTim += 10>>
     -> Um, everything,
-      Red: I [pause=500]... [/pause]guess, everything?.
-      <<set $social_battery -= 15>>
-      <<popup>>
+      Red: I [pause=500]... [/pause]guess, everything?.      
+      <<set $affinityTim -= 10>>
 
   Tim: Yeah, it's a competitive field. Are you ready for that challenge?
     -> Absolutely!
