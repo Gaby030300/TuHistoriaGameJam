@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: Tim
-  messageBubbleOffset: {x: 0, y: 1, z: 0}
+  messageBubbleOffset: {x: 4, y: 1, z: 0}
   offsetUsesRotation: 0
   firstDialogue: Tim
 --- !u!114 &8966074008040177771
